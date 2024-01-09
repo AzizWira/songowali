@@ -1,0 +1,148 @@
+.header {
+    display: flex;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .left {
+    width: 50%;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header .left h1 {
+    color: #FFFAE2;
+    font-family: Vollda;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px;
+    /* 116.071% */
+}
+
+.header .right {
+    width: 50%;
+}
+
+/*  */
+
+.information {
+    display: grid;
+    margin-top: 50px;
+    /* responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.information .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.information .card .icon {
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2E6F34;
+    color: #fff;
+
+}
+
+.information .card:hover .icon {
+    background-color: #389441;
+}
+
+.information .card p {
+    color: #2E6F34;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    /* 150% */
+}
+
+@media only screen and (max-width: 800px) {
+    .information {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .information .card {
+        padding: 15px;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .information {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .information .card {
+        padding: 10px;
+        gap: 10px;
+    }
+
+
+    .information .card p {
+        font-size: 18px;
+        /* 150% */
+    }
+}
+
+/*  */
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.about .img {
+    width: 50%;
+}
+
+.about .img img {
+    width: 100%;
+    height: auto;
+}
+
+.about .text {
+    width: 50%;
+}
+
+.about .text h1 {
+    color: #2E6F34;
+    font-family: Vollda;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.about .text p {
+    color: #797979;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

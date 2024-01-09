@@ -50,6 +50,24 @@ input:focus {
     min-height: calc(100vh - 200px);
 }
 
+@media only screen and (max-width: 900px) {
+    .container {
+      padding: 20px 50px 50px 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .container {
+      padding: 20px 30px 50px 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .container {
+      padding: 20px 30px 50px 30px;
+    }
+  }
+
 /* navbar */
 
 nav {

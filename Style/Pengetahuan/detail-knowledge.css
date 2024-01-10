@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "vollda";
-  src: url("../Assets/font/Vollda-Bold.otf") format("otf"); /* Sesuaikan dengan lokasi dan format file font */
+  src: url("../Assets/font/Vollda-Bold.otf") format("otf");
+  /* Sesuaikan dengan lokasi dan format file font */
   /* Mungkin perlu menambahkan properti lain seperti font-weight, font-style, dsb. */
 }
 
@@ -16,53 +17,66 @@
 .head-content {
   display: flex;
   gap: 40px;
+  align-items: center;
+}
+
+.head-content-left {
+  width: 40%;
+}
+
+.head-content-right {
+  width: 60%;
 }
 
 .gallery {
-  --s: 150px; /* control the size */
-  --g: 5px;   /* control the gap */
-  
+  --s: 100%;
+  --g: 5px;
   display: grid;
-  grid: auto-flow var(--s)/repeat(2,var(--s));
+  grid-template-columns: repeat(2, 1fr);
+  /* grid: auto-flow var(--s)/repeat(2, var(--s)); */
   gap: var(--g);
 }
-.gallery > img {
-  width: 100%; 
+
+.gallery .img {
+  width: 100%;
+  height: auto;
   aspect-ratio: 1;
   cursor: pointer;
-/*   filter: grayscale(); */
   z-index: 0;
-  transition: .25s,z-index 0s .25s;
+  transition: .25s, z-index 0s .25s;
 }
-.gallery > img:hover {
+
+.gallery .img:hover {
   width: calc(200% + var(--g));
   filter: grayscale(0);
   z-index: 1;
-  --_c: 100%;
-  border-radius: 20px;
-  transition: .4s,z-index 0s;
+  transition: .4s, z-index 0s;
 }
-.gallery > img:nth-child(1){
-  border-radius: 20px;
+
+.gallery .img:nth-child(1) {
   place-self: start;
 }
-.gallery > img:nth-child(2){
-  border-radius: 20px;
+
+.gallery .img:nth-child(2) {
   place-self: start end;
 }
-.gallery > img:nth-child(3){
-  border-radius: 20px;
+
+.gallery .img:nth-child(3) {
   place-self: end start;
 }
-.gallery > img:nth-child(4){
-  border-radius: 20px;
+
+.gallery .img:nth-child(4) {
   place-self: end;
 }
 
-.img img {
+.gallery .img img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  display: block;
 }
+
+/*  */
 
 .name-wali {
   color: #2e6f34;
@@ -96,7 +110,9 @@
 }
 
 .icon-location {
-  padding: 3px 5px;
+  padding: 5px;
+  height: max-content;
+  width: max-content;
   font-size: 20px;
   color: white;
   background-color: #ff0000;
@@ -105,7 +121,6 @@
 
 .location p {
   color: #4b4b4b;
-  text-align: justify;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -117,19 +132,21 @@
   font-size: 20px;
   font-weight: 400;
   margin-top: 20px;
-  width: 65%;
+  width: 75%;
 }
 
 .btn-to-location {
   font-size: 16px;
   color: white;
   background-color: #2e6f34;
-  padding: 13px 60px;
+  padding: 10px 0;
   margin-top: 24px;
   border-radius: 10px;
   display: flex;
+  justify-content: center;
   gap: 15px;
   align-items: center;
+  width: 40%;
 }
 
 .btn-to-location:hover {
@@ -140,16 +157,103 @@
   font-size: 24px;
 }
 
-@media only screen and (max-width: 1100px) {
-  .address-location{
+@media only screen and (max-width: 1150px) {
+  .born-die {
+    margin-top: 10px;
+  }
+
+  .location {
+    margin-top: 10px;
+
+  }
+
+  .address-location {
+    margin-top: 15px;
     width: 100%;
+  }
+
+  .btn-to-location {
+    margin-top: 15px;
+    width: 60%;
+  }
+
+  .head-content {
+    gap: 25px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .head-content{
-    display: flex;
+  .name-wali {
+    font-size: 24px;
+  }
+
+  .text-born {
+    font-size: 18px;
+  }
+
+  .text-die {
+    font-size: 18px;
+  }
+
+  .location p {
+    font-size: 18px;
+  }
+
+  .address-location {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .head-content {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-knowledge-sunankudus {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .head-content-left {
+    width: 100%;
+  }
+
+  .head-content-right {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .btn-to-location {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name-wali {
+    font-size: 20px;
+  }
+
+  .text-born {
+    font-size: 16px;
+  }
+
+  .text-die {
+    font-size: 16px;
+  }
+
+  .location p {
+    font-size: 16px;
+  }
+
+  .address-location {
+    font-size: 16px;
+  }
+
+  .container-knowledge-sunankudus {
+    margin-top: 10px;
   }
 }
 
@@ -187,17 +291,46 @@
   text-align: justify;
 }
 
-.btn-play {
+.con-btn-audio{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.play, .pause{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  font-size: 30px;
+  height: 46px;
+  width: 46px;
+  background-color: #2e6f34;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.play:hover, .pause:hover{
+  background-color: #327b39;
+}
+
+.play, .pause{
+  display: none;
+}
+
+.btn-music {
   background-color: #2e6f34;
   padding: 10px 50px;
   font-size: 20px;
   font-weight: 500;
   border-radius: 10px;
   color: white;
-  margin-top: 18px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: max-content;
   gap: 10px;
 }
 
@@ -205,7 +338,7 @@
   font-size: 26px;
 }
 
-.btn-play:hover {
+.btn-music:hover {
   background-color: #327b39;
 }
 
@@ -286,51 +419,68 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .title-origin{
-    font-size: 22px;
-  }
+  .content-information-wali{
+    margin-top: 30px;
 
-  .desc-origin{
-    font-size: 16px;
+  } 
+  
+  .container-origin{
+    margin-top: 30px;
+    padding: 15px;
   }
   
-  .container-method{
+  .preview-content{
+    margin-top: 30px;
+    padding: 15px;
+  }
+
+  .title-origin {
+    font-size: 22px;
+  }
+
+  .desc-origin {
+    font-size: 16px;
+  }
+
+  .container-method {
     margin-top: 30px;
   }
 
-  .title-method{
+  .title-method {
     font-size: 22px;
   }
 
-  .desc-method{
+  .desc-method {
     font-size: 16px;
   }
 
-  .container-culture{
+  .container-culture {
     margin-top: 30px;
   }
 
-  .title-culture{
+  .title-culture {
     font-size: 22px;
   }
 
-  .desc-culture{
+  .desc-culture {
     font-size: 16px;
   }
 
-  .btn-play{
+  .btn-music {
     font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
   }
 
-  .icon-sound{
+  .icon-sound {
     font-size: 22px;
   }
 
-  .desc-preview{
+  .desc-preview {
     font-size: 16px;
   }
 
-  .btn-test-knowledge{
+  .btn-test-knowledge {
     font-size: 16px;
   }
 }

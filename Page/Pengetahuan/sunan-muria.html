@@ -1,206 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Songo Wali</title>
-    <link rel="stylesheet" href="../../Style/Pengetahuan/detail-knowledge.css" />
+    <link
+      rel="stylesheet"
+      href="../../Style/Pengetahuan/detail-knowledge.css"
+    />
     <link rel="stylesheet" href="../../app.css" />
-    <link rel="icon" href="../../Assets/logo-songo-wali.svg" type="image/icon type" />
-    <meta name="description"
-        content="Edukids adalah sebuah website yang menyediakan berbagai macam materi pembelajaran untuk anak-anak." />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      rel="icon"
+      href="../../Assets/logo-songo-wali.svg"
+      type="image/icon type"
+    />
+    <meta
+      name="description"
+      content="Edukids adalah sebuah website yang menyediakan berbagai macam materi pembelajaran untuk anak-anak."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</head>
+  </head>
 
-<audio id="Audio-BiografiSunanKudus">
-    <source src="../../Assets/Audio/Audio-Pengetahuan-SunanMuria/Audio-BiografiSunanMuria.mp3" type="audio/mpeg">
-</audio>
+  <audio id="Audio-BiografiSunanKudus">
+    <source
+      src="../../Assets/Audio/Audio-Pengetahuan-SunanMuria/Audio-BiografiSunanMuria.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
 
-<audio id="Audio-DakwahSunanKudus">
-    <source src="../../Assets/Audio/Audio-Pengetahuan-SunanMuria/Audio-DakwahSunanMuria.mp3" type="audio/mpeg">
-</audio>
+  <audio id="Audio-DakwahSunanKudus">
+    <source
+      src="../../Assets/Audio/Audio-Pengetahuan-SunanMuria/Audio-DakwahSunanMuria.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
 
-<audio id="Audio-KulturalSunanKudus">
-    <source src="../../Assets/Audio/Audio-Pengetahuan-SunanMuria/Audio-KulturalSunanMuria.mp3" type="audio/mpeg">
-</audio>
+  <audio id="Audio-KulturalSunanKudus">
+    <source
+      src="../../Assets/Audio/Audio-Pengetahuan-SunanMuria/Audio-KulturalSunanMuria.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
 
-<body>
+  <body>
     <nav>
-        <div class="wrapper-nav">
-            <div class="logo">
-                <img src="../../Assets/logo-nav.jpg" alt="" class="logo-img" />
-            </div>
-            <input type="radio" name="slider" id="menu-btn-nav" />
-            <input type="radio" name="slider" id="close-btn-nav" />
-            <ul class="nav-links">
-                <label for="close-btn-nav" class="btn close-btn-nav"><i class="fas fa-times"></i></label>
-                <li><a href="../../index.html">Beranda</a></li>
-                <li><a href="../../Page/pengetahuan.html" class="active">Pengetahuan</a></li>
-                <li><a href="../../Page/Kuis/tes-pengetahuan.html">Tes Pengetahuan</a></li>
-                <li><a href="../../Page/tentang.html">Tentang</a></li>
-                <li><a href="../../Page/ziarah.html">Ziarah</a></li>
-            </ul>
-            <div class="nav-right">
-                <label for="menu-btn-nav" class="btn menu-btn-nav"><iconify-icon icon="pajamas:hamburger"
-                        style="color: #2D6E34" width="30"></iconify-icon></label>
-            </div>
+      <div class="wrapper-nav">
+        <div class="logo">
+          <img src="../../Assets/logo-nav.jpg" alt="" class="logo-img" />
         </div>
+        <input type="radio" name="slider" id="menu-btn-nav" />
+        <input type="radio" name="slider" id="close-btn-nav" />
+        <ul class="nav-links">
+          <label for="close-btn-nav" class="btn close-btn-nav"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../../index.html">Beranda</a></li>
+          <li>
+            <a href="../../Page/pengetahuan.html" class="active">Pengetahuan</a>
+          </li>
+          <li>
+            <a href="../../Page/Kuis/tes-pengetahuan.html">Tes Pengetahuan</a>
+          </li>
+          <li><a href="../../Page/tentang.html">Tentang</a></li>
+          <li><a href="../../Page/ziarah.html">Ziarah</a></li>
+        </ul>
+        <div class="nav-right">
+          <label for="menu-btn-nav" class="btn menu-btn-nav"
+            ><iconify-icon
+              icon="pajamas:hamburger"
+              style="color: #2d6e34"
+              width="30"
+            ></iconify-icon
+          ></label>
+        </div>
+      </div>
     </nav>
 
     <div class="container">
-        <div class="container-knowledge-sunankudus">
-            <div class="head-content">
-                <div class="gallery">
-                    <img src="../../Assets/pengetahuan/sunan-muria.jpg" alt="gambar sunan muria">
-                    <img src="../../Assets/pengetahuan/makam-sunan-muria1.jpg" alt="gambar sunan muria">
-                    <img src="../../Assets/pengetahuan/makam-sunan-muria2.jpg" alt="gambar sunan muria">
-                    <img src="../../Assets/pengetahuan/gambar-sunanmuria.jpg" alt="gambar sunan muria">
-                </div>
-                <!-- <div class="img">
-                    <img src="../../Assets/pengetahuan/sunan-muria.jpg" alt="gambar sunan kudus" class="profile-wali">
-                </div> -->
-                <div class="head-content-right">
-                    <div class="name-wali">
-                        <p>Sunan Muria</p>
-                        <div class="line-name"></div>
-                    </div>
-                    <div class="born-die">
-                        <p class="text-born">Lahir : Sekitar Tahun 1450 an</p>
-                        <p class="text-die">Wafat : Sekitar Tahun 1551 an</p>
-                    </div>
-                    <div class="location">
-                        <iconify-icon icon="mingcute:location-line" class="icon-location"></iconify-icon>
-                        <p>Makam Tokoh Sunan Muria</p>
-                    </div>
-                    <p class="address-location">Jl terminal wisata, Colo, Kec. Dawe, Kabupaten Kudus, Jawa Tengah 59353
-                    </p>
-                    <a href="https://maps.app.goo.gl/5GbT9yHewghtC8P26">
-                        <button class="btn-to-location">
-                            Arahkan ke Lokasi <iconify-icon icon="uil:location-arrow" class="icon-arrow"></iconify-icon>
-                        </button>
-                    </a>
-                </div>
+      <div class="container-knowledge-sunankudus">
+        <div class="head-content">
+          <div class="head-content-left">
+            <div class="gallery">
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/sunan-muria.jpg"
+                  alt="gambar sunan muria"
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/makam-sunan-muria1.jpg"
+                  alt="gambar sunan muria"
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/makam-sunan-muria2.jpg"
+                  alt="gambar sunan muria"
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/gambar-sunanmuria.jpg"
+                  alt="gambar sunan muria"
+                />
+              </div>
             </div>
-            <div class="content-information-wali">
-                <div class="title-information">
-                    <p>Informasi</p>
-                    <div class="line-bottom"></div>
-                </div>
-                <div class="container-origin">
-                    <p class="title-origin">Biografi Sunan Muria</p>
-                    <p class="desc-origin">Sunan Muria adalah putra Sunan Kalijaga. Sunan Muria merupakan tokoh Wali
-                        Songo yang paling muda usianya. Sebagaimana Sunan Kalijaga, Sunan Muria berdakwah melalui jalur
-                        budaya. Sunan Muria dikenal sangat piawai menciptakan berbagai jenis tembang cilik (sekar alit)
-                        jenis sinom dan kinanthi yang berisi nasihat-nasihat dan ajaran Tauhid. Seperti ayahnya, Sunan
-                        Muria dikenal pintar mendalang dengan membawakan lakon-lakon carangan karya Sunan Kalijaga.
-                    </p>
-                    <button class="btn-play" onclick="playAudio()" type="button">
-                        Dengarkan
-                        <iconify-icon icon="material-symbols:sound-detection-loud-sound-rounded"
-                            class="icon-sound"></iconify-icon>
-                    </button>
-                </div>
-
-                <div class="container-method">
-                    <p class="title-method">Metode Berdakwah Sunan Muria</p>
-                    <p class="desc-method">
-                        Sunan Muria menjalankan dakwah melalui pendekatan budaya. Dalam seni pewayangan, misal, Sunan
-                        Muria diketahui suka menggelar sejumlah lakon carangan pertunjukan wayang gubahan Sunan
-                        Kalijaga, seperti : Dewa Ruci, Dewa Srani, Jamus Kalimasada, Begawan Ciptaning, Semar Ambarang
-                        Jantur, dan sebagainya. Melalui media pertunjukan wayang, Sunan Muria memberikan
-                        penerangan-penerangan kepada masyarakat
-                        tentang berbagai hal dalam kaitan dengan tauhid. Dengan pendekatan lewat pertunjukan wayang,
-                        tembang-tembang, tradisi-tradisi lama, dan praktik-praktik keagamaan lama yang sudah diislamkan,
-                        Sunan Muria berhasil mengembangkan dakwah Islam di daerah Jepara, Tayu, Juwana, bahkan sekitar
-                        Kudus.
-                    </p>
-                    <button class="btn-play" onclick="AudioPlay()" type="button">
-                        Dengarkan
-                        <iconify-icon icon="material-symbols:sound-detection-loud-sound-rounded"
-                            class="icon-sound"></iconify-icon>
-                    </button>
-                </div>
-
-                <div class="container-culture">
-                    <p class="title-culture">Pendekatan Kultural Sunan Muria</p>
-                    <p class="desc-culture">
-                        1. Bidang Kesenian
-                        Sunan Muria menciptakan beberapa tembang. Di antara tembangnya yang terkenal yaitu tembang
-                        Kinanthi dan Sinom. <br>
-                        2. Tradisi Bancakan
-                        Sunan Muria tidak menghilangkan tradisi masyarakat Jawa sebelumnya, justru ia memberikan warna
-                        Islam pada tradisi tersebut. Tradisi bancakan dan tumpeng yang biasa dipersembahkan ke
-                        tempat-tempat yang angker diubah menjadi kenduri, yaitu mengirim doa kepada leluhur. <br>
-                        3. Tradisi Syukuran
-                        Colo Muria adalah salah satu tradisi syukuran sebagai bentuk rasa syukur kepada alam dan
-                        Tuhannya yang secara massal dilaksanakan oleh masyarakat Colo Muria. Tradisi tersebut ditujukan
-                        untuk menghormati dan mensyukuri dengan apa yang ada di bumi, khususnya untuk masyarakat sekitar
-                        Muria. <br>
-                        4. Pantangan Bekerja Tiap Kamis Legi
-                        Pantangan bekerja setiap Kamis Legi merupakan tradisi dari masyarakat Colo yang masih berlaku
-                        hingga saat ini. Jika masyarakat Colo ingin melakukan pekerjaan atau hajat tertentu, maka mereka
-                        harus ziarah ke makam Sunan Muria dan melakukan selamatan agar tidak mendapatkan malapetaka
-                        maupun sesuatu yang tidak baik. <br>
-                        5. Melestarikan Lingkungan
-                        Sunan Muria meninggalkan situs yang dikeramatkan seperti buah parijoto, kayu pakis haji, air
-                        gentong yang terdapat di lokasi pemakaman, ngebul bulusan, pohon kayu adem ati, serta pohon jati
-                        keramat.
-                    </p>
-                    <button class="btn-play" onclick="PlaySound()" type="button">
-                        Dengarkan
-                        <iconify-icon icon="material-symbols:sound-detection-loud-sound-rounded"
-                            class="icon-sound"></iconify-icon>
-                    </button>
-                </div>
-
-                <div class="preview-content">
-                    <p class="desc-preview">Gimana nih, apakah anda sudah membaca atau mendengarkan dari biografi sampai
-                        pendekatan kultural dari Sunan Muria ini?, Yuk sekarang tes pengetahuan anda seputar kearifan
-                        spiritual Sunan Muria!</p>
-                    <a href="">
-                        <button class="btn-test-knowledge">
-                            Tes Pengetahuan Anda
-                        </button>
-                    </a>
-                </div>
+          </div>
+          <div class="head-content-right">
+            <div class="name-wali">
+              <p>Sunan Muria</p>
+              <div class="line-name"></div>
             </div>
+            <div class="born-die">
+              <p class="text-born"><b>Lahir</b> : Sekitar Tahun 1450 an</p>
+              <p class="text-die"><b>Wafat</b> : Sekitar Tahun 1551 an</p>
+            </div>
+            <div class="location">
+              <iconify-icon
+                icon="mingcute:location-line"
+                class="icon-location"
+              ></iconify-icon>
+              <p>Makam Tokoh Sunan Muria</p>
+            </div>
+            <p class="address-location">
+              Jl terminal wisata, Colo, Kec. Dawe, Kabupaten Kudus, Jawa Tengah
+              59353
+            </p>
+            <a href="https://maps.app.goo.gl/5GbT9yHewghtC8P26" target="_blank">
+              <button class="btn-to-location">
+                Arahkan ke Lokasi
+                <iconify-icon
+                  icon="uil:location-arrow"
+                  class="icon-arrow"
+                ></iconify-icon>
+              </button>
+            </a>
+          </div>
         </div>
+        <div class="content-information-wali">
+          <div class="title-information">
+            <p>Informasi</p>
+            <div class="line-bottom"></div>
+          </div>
+          <div class="container-origin">
+            <p class="title-origin">Biografi Sunan Muria</p>
+            <p class="desc-origin">
+              Sunan Muria adalah putra Sunan Kalijaga. Sunan Muria merupakan
+              tokoh Wali Songo yang paling muda usianya. Sebagaimana Sunan
+              Kalijaga, Sunan Muria berdakwah melalui jalur budaya. Sunan Muria
+              dikenal sangat piawai menciptakan berbagai jenis tembang cilik
+              (sekar alit) jenis sinom dan kinanthi yang berisi nasihat-nasihat
+              dan ajaran Tauhid. Seperti ayahnya, Sunan Muria dikenal pintar
+              mendalang dengan membawakan lakon-lakon carangan karya Sunan
+              Kalijaga.
+            </p>
+            <div class="con-btn-audio">
+              <button id="btnPlayAudioBiografi" class="btn-music" type="button">
+                Dengarkan
+                <iconify-icon
+                  icon="material-symbols:sound-detection-loud-sound-rounded"
+                  class="icon-sound"
+                ></iconify-icon>
+              </button>
+              <button id="btnContinueBiografi" class="play">
+                <iconify-icon icon="ic:round-play-arrow"></iconify-icon>
+              </button>
+              <button id="btnPauseBiografi" class="pause">
+                <iconify-icon icon="ic:round-pause"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="container-method">
+            <p class="title-method">Metode Berdakwah Sunan Muria</p>
+            <p class="desc-method">
+              Sunan Muria menjalankan dakwah melalui pendekatan budaya. Dalam
+              seni pewayangan, misal, Sunan Muria diketahui suka menggelar
+              sejumlah lakon carangan pertunjukan wayang gubahan Sunan Kalijaga,
+              seperti : Dewa Ruci, Dewa Srani, Jamus Kalimasada, Begawan
+              Ciptaning, Semar Ambarang Jantur, dan sebagainya. Melalui media
+              pertunjukan wayang, Sunan Muria memberikan penerangan-penerangan
+              kepada masyarakat tentang berbagai hal dalam kaitan dengan tauhid.
+              Dengan pendekatan lewat pertunjukan wayang, tembang-tembang,
+              tradisi-tradisi lama, dan praktik-praktik keagamaan lama yang
+              sudah diislamkan, Sunan Muria berhasil mengembangkan dakwah Islam
+              di daerah Jepara, Tayu, Juwana, bahkan sekitar Kudus.
+            </p>
+            <div class="con-btn-audio">
+              <button id="btnPlayAudioDakwah" class="btn-music" type="button">
+                Dengarkan
+                <iconify-icon
+                  icon="material-symbols:sound-detection-loud-sound-rounded"
+                  class="icon-sound"
+                ></iconify-icon>
+              </button>
+              <button id="btnContinueDakwah" class="play">
+                <iconify-icon icon="ic:round-play-arrow"></iconify-icon>
+              </button>
+              <button id="btnPauseDakwah" class="pause">
+                <iconify-icon icon="ic:round-pause"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="container-culture">
+            <p class="title-culture">Pendekatan Kultural Sunan Muria</p>
+            <p class="desc-culture">
+              1. Bidang Kesenian Sunan Muria menciptakan beberapa tembang. Di
+              antara tembangnya yang terkenal yaitu tembang Kinanthi dan Sinom.
+              <br />
+              2. Tradisi Bancakan Sunan Muria tidak menghilangkan tradisi
+              masyarakat Jawa sebelumnya, justru ia memberikan warna Islam pada
+              tradisi tersebut. Tradisi bancakan dan tumpeng yang biasa
+              dipersembahkan ke tempat-tempat yang angker diubah menjadi
+              kenduri, yaitu mengirim doa kepada leluhur. <br />
+              3. Tradisi Syukuran Colo Muria adalah salah satu tradisi syukuran
+              sebagai bentuk rasa syukur kepada alam dan Tuhannya yang secara
+              massal dilaksanakan oleh masyarakat Colo Muria. Tradisi tersebut
+              ditujukan untuk menghormati dan mensyukuri dengan apa yang ada di
+              bumi, khususnya untuk masyarakat sekitar Muria. <br />
+              4. Pantangan Bekerja Tiap Kamis Legi Pantangan bekerja setiap
+              Kamis Legi merupakan tradisi dari masyarakat Colo yang masih
+              berlaku hingga saat ini. Jika masyarakat Colo ingin melakukan
+              pekerjaan atau hajat tertentu, maka mereka harus ziarah ke makam
+              Sunan Muria dan melakukan selamatan agar tidak mendapatkan
+              malapetaka maupun sesuatu yang tidak baik. <br />
+              5. Melestarikan Lingkungan Sunan Muria meninggalkan situs yang
+              dikeramatkan seperti buah parijoto, kayu pakis haji, air gentong
+              yang terdapat di lokasi pemakaman, ngebul bulusan, pohon kayu adem
+              ati, serta pohon jati keramat.
+            </p>
+            <div class="con-btn-audio">
+              <button id="btnPlayAudioKultural" class="btn-music" type="button">
+                Dengarkan
+                <iconify-icon
+                  icon="material-symbols:sound-detection-loud-sound-rounded"
+                  class="icon-sound"
+                ></iconify-icon>
+              </button>
+              <button id="btnContinueKultural" class="play">
+                <iconify-icon icon="ic:round-play-arrow"></iconify-icon>
+              </button>
+              <button id="btnPauseKultural" class="pause">
+                <iconify-icon icon="ic:round-pause"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="preview-content">
+            <p class="desc-preview">
+              Gimana nih, apakah anda sudah membaca atau mendengarkan dari
+              biografi sampai pendekatan kultural dari Sunan Muria ini?, Yuk
+              sekarang tes pengetahuan anda seputar kearifan spiritual Sunan
+              Muria!
+            </p>
+            <a href="">
+              <button class="btn-test-knowledge">Tes Pengetahuan Anda</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <img src="../../Assets/logo-footer.svg" alt="" />
-        <div class="link-footer">
-            <ul class="footer-link">
-                <li><a href="../../index.html">Beranda</a></li>
-                <li><a href="../../Page/pengetahuan.html" class="active">Pengetahuan</a></li>
-                <li><a href="../../Page/Kuis/tes-pengetahuan.html">Tes Pengetahuan</a></li>
-                <li><a href="../../Page/tentang.html">Tentang</a></li>
-                <li><a href="../../Page/ziarah.html">Ziarah</a></li>
-            </ul>
-        </div>
-        <div class="line-footer"></div>
-        <p>© @copyright songo wali 2024</p>
+      <img src="../../Assets/logo-footer.svg" alt="" />
+      <div class="line-footer"></div>
+      <p>© @copyright songo wali 2024</p>
     </footer>
 
     <script>
-        var biografi = document.getElementById("Audio-BiografiSunanKudus");
-        var dakwah = document.getElementById("Audio-DakwahSunanKudus");
-        var kultural = document.getElementById("Audio-KulturalSunanKudus");
+      var biografi = document.getElementById("Audio-BiografiSunanKudus");
+      var dakwah = document.getElementById("Audio-DakwahSunanKudus");
+      var kultural = document.getElementById("Audio-KulturalSunanKudus");
 
-        function playAudio() {
-            biografi.play();
-        }
+      var currentAudio = null; // Menyimpan audio yang sedang diputar
 
-        function AudioPlay() {
-            dakwah.play();
-        }
+      document
+        .getElementById("btnPlayAudioBiografi")
+        .addEventListener("click", playAudio);
+      document
+        .getElementById("btnPlayAudioDakwah")
+        .addEventListener("click", audioPlay);
+      document
+        .getElementById("btnPlayAudioKultural")
+        .addEventListener("click", playSound);
 
-        function PlaySound() {
-            kultural.play();
+      function playAudio() {
+        stopCurrentAudio(); // Menghentikan audio yang sedang diputar (jika ada)
+        currentAudio = biografi;
+        biografi.play();
+      }
+
+      function audioPlay() {
+        stopCurrentAudio();
+        currentAudio = dakwah;
+        dakwah.play();
+      }
+
+      function playSound() {
+        stopCurrentAudio();
+        currentAudio = kultural;
+        kultural.play();
+      }
+
+      function stopCurrentAudio() {
+        if (currentAudio !== null && !currentAudio.paused) {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
         }
+      }
     </script>
-</body>
-
+  </body>
 </html>

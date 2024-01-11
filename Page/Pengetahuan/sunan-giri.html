@@ -1,185 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Songo Wali</title>
-    <link rel="stylesheet" href="../../Style/Pengetahuan/detail-knowledge.css" />
+    <link
+      rel="stylesheet"
+      href="../../Style/Pengetahuan/detail-knowledge.css"
+    />
     <link rel="stylesheet" href="../../app.css" />
-    <link rel="icon" href="../../Assets/logo-songo-wali.svg" type="image/icon type" />
-    <meta name="description"
-        content="Edukids adalah sebuah website yang menyediakan berbagai macam materi pembelajaran untuk anak-anak." />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      rel="icon"
+      href="../../Assets/logo-songo-wali.svg"
+      type="image/icon type"
+    />
+    <meta
+      name="description"
+      content="Edukids adalah sebuah website yang menyediakan berbagai macam materi pembelajaran untuk anak-anak."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</head>
+  </head>
 
-<audio id="Audio-BiografiSunanKudus">
-    <source src="../../Assets/Audio/Audio-Pengetahuan-SunanGiri/Audio-BiografiSunanGiri.mp3" type="audio/mpeg">
-</audio>
+  <audio id="Audio-BiografiSunanKudus">
+    <source
+      src="../../Assets/Audio/Audio-Pengetahuan-SunanGiri/Audio-BiografiSunanGiri.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
 
-<audio id="Audio-DakwahSunanKudus">
-    <source src="../../Assets/Audio/Audio-Pengetahuan-SunanGiri/Audio-DakwahSunanGiri.mp3" type="audio/mpeg">
-</audio>
+  <audio id="Audio-DakwahSunanKudus">
+    <source
+      src="../../Assets/Audio/Audio-Pengetahuan-SunanGiri/Audio-DakwahSunanGiri.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
 
-<audio id="Audio-KulturalSunanKudus">
-    <source src="../../Assets/Audio/Audio-Pengetahuan-SunanGiri/Audio-KulturalSunanGiri.mp3" type="audio/mpeg">
-</audio>
+  <audio id="Audio-KulturalSunanKudus">
+    <source
+      src="../../Assets/Audio/Audio-Pengetahuan-SunanGiri/Audio-KulturalSunanGiri.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
 
-<body>
+  <body>
     <nav>
-        <div class="wrapper-nav">
-            <div class="logo">
-                <img src="../../Assets/logo-nav.jpg" alt="" class="logo-img" />
-            </div>
-            <input type="radio" name="slider" id="menu-btn-nav" />
-            <input type="radio" name="slider" id="close-btn-nav" />
-            <ul class="nav-links">
-                <label for="close-btn-nav" class="btn close-btn-nav"><i class="fas fa-times"></i></label>
-                <li><a href="../../index.html">Beranda</a></li>
-                <li><a href="../../Page/pengetahuan.html" class="active">Pengetahuan</a></li>
-                <li><a href="../../Page/Kuis/tes-pengetahuan.html">Tes Pengetahuan</a></li>
-                <li><a href="../../Page/tentang.html">Tentang</a></li>
-                <li><a href="../../Page/ziarah.html">Ziarah</a></li>
-            </ul>
-            <div class="nav-right">
-                <label for="menu-btn-nav" class="btn menu-btn-nav"><iconify-icon icon="pajamas:hamburger"
-                        style="color: #2D6E34" width="30"></iconify-icon></label>
-            </div>
+      <div class="wrapper-nav">
+        <div class="logo">
+          <img src="../../Assets/logo-nav.jpg" alt="" class="logo-img" />
         </div>
+        <input type="radio" name="slider" id="menu-btn-nav" />
+        <input type="radio" name="slider" id="close-btn-nav" />
+        <ul class="nav-links">
+          <label for="close-btn-nav" class="btn close-btn-nav"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../../index.html">Beranda</a></li>
+          <li>
+            <a href="../../Page/pengetahuan.html" class="active">Pengetahuan</a>
+          </li>
+          <li>
+            <a href="../../Page/Kuis/tes-pengetahuan.html">Tes Pengetahuan</a>
+          </li>
+          <li><a href="../../Page/tentang.html">Tentang</a></li>
+          <li><a href="../../Page/ziarah.html">Ziarah</a></li>
+        </ul>
+        <div class="nav-right">
+          <label for="menu-btn-nav" class="btn menu-btn-nav"
+            ><iconify-icon
+              icon="pajamas:hamburger"
+              style="color: #2d6e34"
+              width="30"
+            ></iconify-icon
+          ></label>
+        </div>
+      </div>
     </nav>
 
     <div class="container">
-        <div class="container-knowledge-sunankudus">
-            <div class="head-content">
-                <div class="gallery">
-                    <img src="../../Assets/pengetahuan/sunan-giri.jpg" alt="gambar sunan giri">
-                    <img src="../../Assets/pengetahuan/makam-sunan-giri1.jpg" alt="gambar sunan giri">
-                    <img src="../../Assets/pengetahuan/makam-sunan-giri2.jpg" alt="gambar sunan giri">
-                    <img src="../../Assets/pengetahuan/makam-sunan-giri3.jpg" alt="gambar sunan giri">
-                </div>
-                <!-- <div class="img">
-                    <img src="../../Assets/pengetahuan/sunan-kudus.jpg" alt="gambar sunan kudus" class="profile-wali">
-                </div> -->
-                <div class="head-content-right">
-                    <div class="name-wali">
-                        <p>Sunan Giri</p>
-                        <div class="line-name"></div>
-                    </div>
-                    <div class="born-die">
-                        <p class="text-born">Lahir : Tahun 1442</p>
-                        <p class="text-die">Wafat : Tahun 1506</p>
-                    </div>
-                    <div class="location">
-                        <iconify-icon icon="mingcute:location-line" class="icon-location"></iconify-icon>
-                        <p>Makam Tokoh Sunan Giri</p>
-                    </div>
-                    <p class="address-location">Jl. Sunan Giri, Pedukuhan, Kebomas, Kec. Kebomas, Kabupaten Gresik, Jawa
-                        Timur</p>
-                    <a href="https://maps.app.goo.gl/H9Pb5SWN6TiNCDJH6">
-                        <button class="btn-to-location">
-                            Arahkan ke Lokasi <iconify-icon icon="uil:location-arrow" class="icon-arrow"></iconify-icon>
-                        </button>
-                    </a>
-                </div>
+      <div class="container-knowledge-sunankudus">
+        <div class="head-content">
+          <div class="head-content-left">
+            <div class="gallery">
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/sunan-giri.jpg"
+                  alt="gambar sunan giri"
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/makam-sunan-giri1.jpg"
+                  alt="gambar sunan giri"
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/makam-sunan-giri2.jpg"
+                  alt="gambar sunan giri"
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="../../Assets/pengetahuan/makam-sunan-giri3.jpg"
+                  alt="gambar sunan giri"
+                />
+              </div>
             </div>
-            <div class="content-information-wali">
-                <div class="title-information">
-                    <p>Informasi</p>
-                    <div class="line-bottom"></div>
-                </div>
-                <div class="container-origin">
-                    <p class="title-origin">Biografi Sunan Giri</p>
-                    <p class="desc-origin">Sunan Giri lahir di Blambangan tahun 1442 M dan meninggal tahun 1506
-                        dimakamkan di desa Giri, Kebomas Gresik. Adalah anggota Walisongo dan pendiri kerajaan Giri
-                        Kedaton yang berkedudukan di daerah Kabupaten Gresik. Sunan Giri membangun Giri Kedaton sebagai
-                        pusat penyebaran agama Islam di Pulau Jawa yang pengaruhnya sampai ke Madura, Lombok,
-                        Kalimantan, Sulawesi dan Maluku. Nama Giri sendiri yang digunakan oleh Sunan Giri dalam
-                        menamakan tempat tinggalnya di Gresik itu diambil dari nama tempat ibukota Kerajaan
-                        Blambangan saat itu. Kota Giri saat ini menjadi sebuah kecamatan di Banyuwangi, Jawa Timur.
-                    </p>
-                    <button class="btn-play" onclick="playAudio()" type="button">
-                        Dengarkan
-                        <iconify-icon icon="material-symbols:sound-detection-loud-sound-rounded"
-                            class="icon-sound"></iconify-icon>
-                    </button>
-                </div>
-
-                <div class="container-method">
-                    <p class="title-method">Metode Berdakwah Sunan Giri</p>
-                    <p class="desc-method">Sunan Giri memanfaatkan seni pertunjukan sebagai media menyebarkan Islam
-                        melalui pendidikan yang dipertunjukkan di Giri Keraton, pesantren miliknya yang terletak di
-                        perbukitan Giri. Ia menyelipkan pedoman hidup yang diambil dari ajaran Islam melalui seni
-                        pertunjukkan tersebut. Walaupun sudah memiliki pesantren, Sunan Giri tetap menyiarkan ajaran
-                        Islam secara tatap muka
-                        dengan mendatangi masyarakat satu persatu. Ia baru menyiarkan dakwah kepada kumpulan masyarakat
-                        setelah mereka menerima kehadirannya.
-                    </p>
-                    <button class="btn-play" onclick="AudioPlay()" type="button">
-                        Dengarkan
-                        <iconify-icon icon="material-symbols:sound-detection-loud-sound-rounded"
-                            class="icon-sound"></iconify-icon>
-                    </button>
-                </div>
-
-                <div class="container-culture">
-                    <p class="title-culture">Pendekatan Kultural Sunan Giri</p>
-                    <p class="desc-culture">Dalam dakwahnya, Sunan Giri menggunakan pendekatan kultural. Misalnya dengan
-                        menciptakan beberapa tembang dan permainan untuk anak-anak. Salah satu yang cukup dikenal adalah
-                        cublak-cublak suweng.</p>
-                    <button class="btn-play" onclick="PlaySound()" type="button">
-                        Dengarkan
-                        <iconify-icon icon="material-symbols:sound-detection-loud-sound-rounded"
-                            class="icon-sound"></iconify-icon>
-                    </button>
-                </div>
-
-                <div class="preview-content">
-                    <p class="desc-preview">Gimana nih, apakah anda sudah membaca atau mendengarkan dari biografi sampai
-                        pendekatan kultural dari Sunan Giri ini?, Yuk sekarang tes pengetahuan anda seputar
-                        kearifan spiritual Sunan Giri!</p>
-                    <a href="">
-                        <button class="btn-test-knowledge">
-                            Tes Pengetahuan Anda
-                        </button>
-                    </a>
-                </div>
+          </div>
+          <div class="head-content-right">
+            <div class="name-wali">
+              <p>Sunan Giri</p>
+              <div class="line-name"></div>
             </div>
+            <div class="born-die">
+              <p class="text-born"><b>Lahir</b> : Tahun 1442</p>
+              <p class="text-die"><b>Wafat</b> : Tahun 1506</p>
+            </div>
+            <div class="location">
+              <iconify-icon
+                icon="mingcute:location-line"
+                class="icon-location"
+              ></iconify-icon>
+              <p>Makam Tokoh Sunan Giri</p>
+            </div>
+            <p class="address-location">
+              Jl. Sunan Giri, Pedukuhan, Kebomas, Kec. Kebomas, Kabupaten
+              Gresik, Jawa Timur
+            </p>
+            <a href="https://maps.app.goo.gl/H9Pb5SWN6TiNCDJH6" target="_blank">
+              <button class="btn-to-location">
+                Arahkan ke Lokasi
+                <iconify-icon
+                  icon="uil:location-arrow"
+                  class="icon-arrow"
+                ></iconify-icon>
+              </button>
+            </a>
+          </div>
         </div>
+        <div class="content-information-wali">
+          <div class="title-information">
+            <p>Informasi</p>
+            <div class="line-bottom"></div>
+          </div>
+          <div class="container-origin">
+            <p class="title-origin">Biografi Sunan Giri</p>
+            <p class="desc-origin">
+              Sunan Giri lahir di Blambangan tahun 1442 M dan meninggal tahun
+              1506 dimakamkan di desa Giri, Kebomas Gresik. Adalah anggota
+              Walisongo dan pendiri kerajaan Giri Kedaton yang berkedudukan di
+              daerah Kabupaten Gresik. Sunan Giri membangun Giri Kedaton sebagai
+              pusat penyebaran agama Islam di Pulau Jawa yang pengaruhnya sampai
+              ke Madura, Lombok, Kalimantan, Sulawesi dan Maluku. Nama Giri
+              sendiri yang digunakan oleh Sunan Giri dalam menamakan tempat
+              tinggalnya di Gresik itu diambil dari nama tempat ibukota Kerajaan
+              Blambangan saat itu. Kota Giri saat ini menjadi sebuah kecamatan
+              di Banyuwangi, Jawa Timur.
+            </p>
+            <div class="con-btn-audio">
+              <button id="btnPlayAudioBiografi" class="btn-music" type="button">
+                Dengarkan
+                <iconify-icon
+                  icon="material-symbols:sound-detection-loud-sound-rounded"
+                  class="icon-sound"
+                ></iconify-icon>
+              </button>
+              <button id="btnContinueBiografi" class="play">
+                <iconify-icon icon="ic:round-play-arrow"></iconify-icon>
+              </button>
+              <button id="btnPauseBiografi" class="pause">
+                <iconify-icon icon="ic:round-pause"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="container-method">
+            <p class="title-method">Metode Berdakwah Sunan Giri</p>
+            <p class="desc-method">
+              Sunan Giri memanfaatkan seni pertunjukan sebagai media menyebarkan
+              Islam melalui pendidikan yang dipertunjukkan di Giri Keraton,
+              pesantren miliknya yang terletak di perbukitan Giri. Ia
+              menyelipkan pedoman hidup yang diambil dari ajaran Islam melalui
+              seni pertunjukkan tersebut. Walaupun sudah memiliki pesantren,
+              Sunan Giri tetap menyiarkan ajaran Islam secara tatap muka dengan
+              mendatangi masyarakat satu persatu. Ia baru menyiarkan dakwah
+              kepada kumpulan masyarakat setelah mereka menerima kehadirannya.
+            </p>
+            <div class="con-btn-audio">
+              <button id="btnPlayAudioDakwah" class="btn-music" type="button">
+                Dengarkan
+                <iconify-icon
+                  icon="material-symbols:sound-detection-loud-sound-rounded"
+                  class="icon-sound"
+                ></iconify-icon>
+              </button>
+              <button id="btnContinueDakwah" class="play">
+                <iconify-icon icon="ic:round-play-arrow"></iconify-icon>
+              </button>
+              <button id="btnPauseDakwah" class="pause">
+                <iconify-icon icon="ic:round-pause"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="container-culture">
+            <p class="title-culture">Pendekatan Kultural Sunan Giri</p>
+            <p class="desc-culture">
+              Dalam dakwahnya, Sunan Giri menggunakan pendekatan kultural.
+              Misalnya dengan menciptakan beberapa tembang dan permainan untuk
+              anak-anak. Salah satu yang cukup dikenal adalah cublak-cublak
+              suweng.
+            </p>
+            <div class="con-btn-audio">
+              <button id="btnPlayAudioKultural" class="btn-music" type="button">
+                Dengarkan
+                <iconify-icon
+                  icon="material-symbols:sound-detection-loud-sound-rounded"
+                  class="icon-sound"
+                ></iconify-icon>
+              </button>
+              <button id="btnContinueKultural" class="play">
+                <iconify-icon icon="ic:round-play-arrow"></iconify-icon>
+              </button>
+              <button id="btnPauseKultural" class="pause">
+                <iconify-icon icon="ic:round-pause"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="preview-content">
+            <p class="desc-preview">
+              Gimana nih, apakah anda sudah membaca atau mendengarkan dari
+              biografi sampai pendekatan kultural dari Sunan Giri ini?, Yuk
+              sekarang tes pengetahuan anda seputar kearifan spiritual Sunan
+              Giri!
+            </p>
+            <a href="">
+              <button class="btn-test-knowledge">Tes Pengetahuan Anda</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <img src="../../Assets/logo-footer.svg" alt="" />
-        <div class="link-footer">
-            <ul class="footer-link">
-                <li><a href="../../index.html">Beranda</a></li>
-                <li><a href="../../Page/pengetahuan.html" class="active">Pengetahuan</a></li>
-                <li><a href="../../Page/Kuis/tes-pengetahuan.html">Tes Pengetahuan</a></li>
-                <li><a href="../../Page/tentang.html">Tentang</a></li>
-                <li><a href="../../Page/ziarah.html">Ziarah</a></li>
-            </ul>
-        </div>
-        <div class="line-footer"></div>
-        <p>© @copyright songo wali 2024</p>
+      <img src="../../Assets/logo-footer.svg" alt="" />
+      <div class="line-footer"></div>
+      <p>© @copyright songo wali 2024</p>
     </footer>
 
     <script>
-        var biografi = document.getElementById("Audio-BiografiSunanKudus");
-        var dakwah = document.getElementById("Audio-DakwahSunanKudus");
-        var kultural = document.getElementById("Audio-KulturalSunanKudus");
+      var biografi = document.getElementById("Audio-BiografiSunanKudus");
+      var dakwah = document.getElementById("Audio-DakwahSunanKudus");
+      var kultural = document.getElementById("Audio-KulturalSunanKudus");
 
-        function playAudio() {
-            biografi.play();
-        }
+      var currentAudio = null; // Menyimpan audio yang sedang diputar
 
-        function AudioPlay() {
-            dakwah.play();
-        }
+      document
+        .getElementById("btnPlayAudioBiografi")
+        .addEventListener("click", playAudio);
+      document
+        .getElementById("btnPlayAudioDakwah")
+        .addEventListener("click", audioPlay);
+      document
+        .getElementById("btnPlayAudioKultural")
+        .addEventListener("click", playSound);
 
-        function PlaySound() {
-            kultural.play();
+      function playAudio() {
+        stopCurrentAudio(); // Menghentikan audio yang sedang diputar (jika ada)
+        currentAudio = biografi;
+        biografi.play();
+      }
+
+      function audioPlay() {
+        stopCurrentAudio();
+        currentAudio = dakwah;
+        dakwah.play();
+      }
+
+      function playSound() {
+        stopCurrentAudio();
+        currentAudio = kultural;
+        kultural.play();
+      }
+
+      function stopCurrentAudio() {
+        if (currentAudio !== null && !currentAudio.paused) {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
         }
+      }
     </script>
-</body>
-
+  </body>
 </html>

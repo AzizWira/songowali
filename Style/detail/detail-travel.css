@@ -142,7 +142,7 @@
         font-size: 36px;
     }
 
-    .banner-ziarah .right{
+    .banner-ziarah .right {
         padding: 15px;
         gap: 5px;
     }
@@ -153,29 +153,29 @@
         font-size: 32px;
     }
 
-    .banner-ziarah .right h2{
+    .banner-ziarah .right h2 {
         font-size: 24px;
     }
 
-    .banner-ziarah .right p:nth-child(2){
+    .banner-ziarah .right p:nth-child(2) {
         font-size: 18px;
     }
 
-    .banner-ziarah .right p{
+    .banner-ziarah .right p {
         font-size: 18px;
     }
 
-    .banner-ziarah .right .price{
+    .banner-ziarah .right .price {
         font-size: 22px;
     }
 
-    .banner-ziarah .right button{
+    .banner-ziarah .right button {
         font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .banner-ziarah{
+    .banner-ziarah {
         flex-direction: column;
         gap: 20px;
     }
@@ -184,19 +184,19 @@
         width: 70%;
     }
 
-    .banner-ziarah .left{
+    .banner-ziarah .left {
         width: 100%;
         padding: 40px;
     }
 
-    .banner-ziarah .right{
+    .banner-ziarah .right {
         width: 100%;
         padding: 20px;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .banner-ziarah .left{
+    .banner-ziarah .left {
         padding: 25px;
     }
 
@@ -204,25 +204,25 @@
         font-size: 30px;
     }
 
-    .banner-ziarah .right h2{
+    .banner-ziarah .right h2 {
         font-size: 20px;
     }
 
-    .banner-ziarah .right p:nth-child(2){
+    .banner-ziarah .right p:nth-child(2) {
         font-size: 16px;
     }
 
-    .banner-ziarah .right p{
+    .banner-ziarah .right p {
         font-size: 16px;
     }
 
-    .banner-ziarah .right .price{
+    .banner-ziarah .right .price {
         font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .banner-ziarah .left{
+    .banner-ziarah .left {
         padding: 15px;
     }
 
@@ -244,7 +244,7 @@
 }
 
 .description .con {
-    
+
     /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); */
 }
 
@@ -294,6 +294,22 @@
     background-color: #ffdede;
     padding: 15px;
     border-radius: 20px;
+}
+
+.description .notes .danger {
+    background-color: #ff2e2e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.description .notes .danger p {
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .description .notes p, .description .notes h3 {

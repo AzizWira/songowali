@@ -14,10 +14,6 @@
 .banner-ziarah .left {
     position: relative;
     border-radius: 30px;
-    background: url(../../Assets/detailPaket/innova.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
     width: 65%;
     aspect-ratio: 2/1;
     padding: 50px;
@@ -51,7 +47,7 @@
     gap: 10px;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); */
 }
 
 .banner-ziarah .right h2 {
@@ -73,14 +69,15 @@
 }
 
 .banner-ziarah .right p {
-    color: #797979;
+    color: #4b4b4b;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: 'Poppins', sans-serif;
     /* margin-top: 10px; */
 }
 
@@ -281,6 +278,17 @@
     background: #2E6F34;
 }
 
+.notes h3 span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #fff;
+    background: #F86363;
+}
+
 .description p {
     color: #797979;
     font-family: "Poppins";
@@ -291,29 +299,23 @@
 }
 
 .description .notes {
-    background-color: #ffdede;
+    background-color: #ffeeee;
     padding: 15px;
     border-radius: 20px;
 }
 
-.description .notes .danger {
-    background-color: #ff2e2e;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
 .description .notes .danger p {
-    color: #ffffff;
+    color: #F86363;
     font-family: "Poppins";
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 16px;
 }
 
 .description .notes p, .description .notes h3 {
-    color: #000;
+    color: #4b4b4b;
 }
 
 @media only screen and (max-width: 800px) {

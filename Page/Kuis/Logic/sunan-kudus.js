@@ -273,7 +273,7 @@ function displayResult() {
     };
   
     if (score >= 6) {
-      resultImageElement.src = "../Assets/success.svg";
+      resultImageElement.src = "../../Assets/pengetahuan/success.svg";
       resultTextElement.textContent =
         "HEBATT!! kamu sudah cukup memahami tentang Pengetahuan Sunan Muria";
       btnUlangi.textContent = "Ulangi";
@@ -285,7 +285,7 @@ function displayResult() {
         window.location.href = "../../index.html";
       };
     } else {
-      resultImageElement.src = "../Assets/failedToNextLevel.svg";
+      resultImageElement.src = "../../Assets/pengetahuan/failedToNextLevel.svg";
       resultTextElement.textContent =
         "Wah kamu belum cukup memahami tentang Pengetahuan Sunan Muria";
       btnUlangi.textContent = "Ulangi";

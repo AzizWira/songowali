@@ -270,38 +270,38 @@ function displayResult() {
   
     btnKembali.textContent = "Kembali ke halaman utama";
     btnKembali.onclick = function () {
-      window.location.href = "../index.html";
+      window.location.href = "../../index.html";
     };
   
     if (score >= 6) {
       resultImageElement.src = "../Assets/success.svg";
       resultTextElement.textContent =
-        "HEBATT!! kamu sudah cukup memahami tentang Tentang Budaya Kesenian di jepara";
+        "HEBATT!! kamu sudah cukup memahami tentang Pengetahuan Sunan Muria";
       btnUlangi.textContent = "Ulangi";
       btnUlangi.onclick = function () {
-        window.location.href = "tesBudayaKesenian.html";
+        window.location.href = "sunan-muria.html";
       };
-      btnLanjut.textContent = "Coba Tentang Budaya Adat";
+      btnLanjut.textContent = "Kembali ke halaman utama";
       btnLanjut.onclick = function () {
-        window.location.href = "tesBudayaAdat.html";
+        window.location.href = "../../index.html";
       };
     } else {
       resultImageElement.src = "../Assets/failedToNextLevel.svg";
       resultTextElement.textContent =
-        "Wah kamu belum cukup memahami tentang Tentang Budaya Kesenian di jepara, ayo ulangi atau coba Tentang Budaya Adat";
+        "Wah kamu belum cukup memahami tentang Pengetahuan Sunan Muria";
       btnUlangi.textContent = "Ulangi";
       btnUlangi.onclick = function () {
-        window.location.href = "tesBudayaKesenian.html";
+        window.location.href = "sunan-muria.html";
       };
-      btnLanjut.textContent = "Coba Tentang Budaya Adat";
+      btnLanjut.textContent = "Kembali ke halaman utama";
       btnLanjut.onclick = function () {
-        window.location.href = "tesBudayaAdat.html";
+        window.location.href = "../../index.html";
       };
     }
   
     conBtnResult2.innerHTML = "";
     conBtnResult.innerHTML = "";
-    conBtnResult2.appendChild(btnKembali);
+    // conBtnResult2.appendChild(btnKembali);
     conBtnResult.appendChild(btnLanjut);
     conBtnResult.appendChild(btnUlangi);
   

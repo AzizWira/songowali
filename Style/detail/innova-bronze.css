@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "vollda";
+    src: url("../../Assets/font/Vollda-Bold.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.banner-ziarah {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.banner-ziarah .left {
+    position: relative;
+    border-radius: 30px;
+    background: url(../../Assets/detailPaket/innova.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 65%;
+    aspect-ratio: 2/1;
+    padding: 50px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.banner-ziarah .left img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+}
+
+.banner-ziarah .left h1 {
+    color: #FFFAE2;
+    font-family: "vollda", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 56px; */
+    max-width: 80%;
+}
+
+.banner-ziarah .right {
+    width: 35%;
+    border-radius: 30px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    padding: 25px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.banner-ziarah .right h2 {
+    color: #2E6F34;
+    font-family: "vollda", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner-ziarah .right p:nth-child(2) {
+    color: #4B4B4B;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner-ziarah .right p {
+    color: #797979;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 10px; */
+}
+
+.banner-ziarah .right p span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #2E6F34;
+    background: #E0E9E1;
+}
+
+.banner-ziarah .right .price {
+    color: #2E6F34;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.banner-ziarah .right button {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #2E6F34;
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.1s ease;
+}
+
+.banner-ziarah .right button:hover {
+    background: #327b39;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.10);
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-ziarah .left {
+        padding: 30px;
+    }
+
+    .banner-ziarah .left h1 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .banner-ziarah .left h1 {
+        font-size: 36px;
+    }
+
+    .banner-ziarah .right{
+        padding: 15px;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .banner-ziarah .left h1 {
+        font-size: 32px;
+    }
+
+    .banner-ziarah .right h2{
+        font-size: 24px;
+    }
+
+    .banner-ziarah .right p:nth-child(2){
+        font-size: 18px;
+    }
+
+    .banner-ziarah .right p{
+        font-size: 18px;
+    }
+
+    .banner-ziarah .right .price{
+        font-size: 22px;
+    }
+
+    .banner-ziarah .right button{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .banner-ziarah{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner-ziarah .left h1 {
+        width: 70%;
+    }
+
+    .banner-ziarah .left{
+        width: 100%;
+        padding: 40px;
+    }
+
+    .banner-ziarah .right{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .banner-ziarah .left{
+        padding: 25px;
+    }
+
+    .banner-ziarah .left h1 {
+        font-size: 30px;
+    }
+
+    .banner-ziarah .right h2{
+        font-size: 20px;
+    }
+
+    .banner-ziarah .right p:nth-child(2){
+        font-size: 16px;
+    }
+
+    .banner-ziarah .right p{
+        font-size: 16px;
+    }
+
+    .banner-ziarah .right .price{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .banner-ziarah .left{
+        padding: 15px;
+    }
+
+    .banner-ziarah .left h1 {
+        font-size: 26px;
+    }
+}
+
+/*  */
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    padding: 25px;
+}
+
+.description .con {
+    
+    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10); */
+}
+
+.description h2 {
+    color: #4B4B4B;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.description h3 {
+    color: #4B4B4B;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-self: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.description h3 span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #E0E9E1;
+    background: #2E6F34;
+}
+
+.description p {
+    color: #797979;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description .notes {
+    background-color: #ffdede;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.description .notes p, .description .notes h3 {
+    color: #000;
+}
+
+@media only screen and (max-width: 800px) {
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .description h3 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .description h2 {
+        font-size: 18px;
+    }
+
+    .description h3 {
+        font-size: 18px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+}

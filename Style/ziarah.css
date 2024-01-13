@@ -42,7 +42,7 @@
 
 .head-ziarah .right .img img {
     display: block;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 0px 0;
     width: 100%;
     height: auto;
 }
@@ -287,7 +287,7 @@
     color: #FFF;
     text-align: center;
     font-family: "Poppins";
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 500;
     width: 90%;
@@ -307,6 +307,7 @@
     font-weight: 600;
     line-height: normal;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -454,7 +455,7 @@
 .selectArmada .con .card .img img {
     width: 100%;
     height: auto;
-    border-radius: 30px 30px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .selectArmada .con .card p {
@@ -569,7 +570,7 @@
 .option-travel .con-travel .card .top .img img {
     width: 100%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .option-travel .con-travel .card .top h3 {
@@ -579,7 +580,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
 
+.option-travel .con-travel .card:hover {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
 }
 
 .option-travel .con-travel .card .top p {

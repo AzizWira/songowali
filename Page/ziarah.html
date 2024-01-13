@@ -18,6 +18,7 @@
     />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
+
   <body>
     <nav>
       <div class="wrapper-nav">
@@ -47,6 +48,242 @@
         </div>
       </div>
     </nav>
-    <div class="container"></div>
+    <div class="container">
+      <div class="head-ziarah">
+        <div class="left">
+          <h1>
+            Wisata Religi Ngga Ribet Lagi Dan Dengan Harga Yang Terjangkau
+          </h1>
+        </div>
+        <div class="right">
+          <img src="../Assets/imgHeaderZiarah.png" alt="" />
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="card">
+          <p>
+            <span>
+              <iconify-icon
+                icon="ph:seal-check-bold"
+                class="icon"
+              ></iconify-icon>
+            </span>
+            Aman
+          </p>
+          <p>Layanan travel yang kami sediakan 100% dijamin aman.</p>
+        </div>
+        <div class="card">
+          <p>
+            <span>
+              <iconify-icon
+                icon="codicon:workspace-trusted"
+                class="icon"
+              ></iconify-icon>
+            </span>
+            Amanah
+          </p>
+          <p>Layanan travel yang kami sediakan 100% terjamin amanah.</p>
+        </div>
+        <div class="card">
+          <p>
+            <span>
+              <iconify-icon
+                icon="heroicons-outline:cash"
+                class="icon"
+              ></iconify-icon>
+            </span>
+            Terjangkau
+          </p>
+          <p>Layanan travel yang kami sediakan dijamin terjangkau harganya.</p>
+        </div>
+      </div>
+
+      <div class="boxTofeature">
+        <img src="../Assets/detailPaket/elipse.png" alt="" />
+        <h2>
+          Kami menyediakan fitur khusus untuk mempermudah pemilihan tipe
+          kendaraan yang anda perlukan
+        </h2>
+        <button>Cek Sekarang</button>
+      </div>
+
+      <div class="selectArmada" id="vehicleSelection">
+        <h2>Pilih Armada</h2>
+        <p>Pilih dan scroll kebawah untuk melihat hasil</p>
+        <div class="con">
+          <div
+            class="card active"
+            data-category="innova"
+            onclick="window.location.href = '#option-travel';"
+          >
+            <div class="img">
+              <img src="../Assets/imgInnova.png" alt="" />
+            </div>
+            <p>Mobil Innova</p>
+          </div>
+          <div
+            class="card"
+            data-category="hiace"
+            onclick="window.location.href = '#option-travel';"
+          >
+            <div class="img">
+              <img src="../Assets/imgHiace.png" alt="" />
+            </div>
+            <p>Mobil Hiace</p>
+          </div>
+          <div
+            class="card"
+            data-category="mediumBus"
+            onclick="window.location.href = '#option-travel';"
+          >
+            <div class="img">
+              <img src="../Assets/imgmediumBus.png" alt="" />
+            </div>
+            <p>Medium Bus</p>
+          </div>
+          <div
+            class="card"
+            data-category="bigBus"
+            onclick="window.location.href = '#option-travel';"
+          >
+            <div class="img">
+              <img src="../Assets/imgBigBus.png" alt="" />
+            </div>
+            <p>Big Bus</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="option-travel" id="option-travel">
+        <h2>
+          Berikut paket travel yang sesuai dengan kendaraan yang kamu pilih
+        </h2>
+        <div class="con-travel" id="con-travel"></div>
+      </div>
+
+      <div class="sub-subjek">
+        <h2 class="title-faq-quiz">Galeri</h2>
+        <p>Berikut beberapa gambar Tempat Wisata Religi Makam Para Wali Songo</p>
+      </div>
+
+      <div class="galery">
+        <div id="item-0">
+          <p>Makam Sunan Ampel</p>
+        </div>
+        <div id="item-1">
+          <p>Makam Sunan Drajat</p>
+        </div>
+        <div id="item-2">
+          <p>Makam Sunan Gunung Jati</p>
+        </div>
+        <div id="item-3">
+          <p>Makam Sunan Muria</p>
+        </div>
+        <div id="item-4">
+          <p>Makam Sunan Kalijaga</p>
+        </div>
+        <div id="item-5">
+          <p>Menara Masjid Sunan Kudus</p>
+        </div>
+      </div>
+
+      <div class="sub-subjek">
+        <h2 class="title-faq-quiz">Pertanyaan Umum</h2>
+        <p>Berikut pertanyaan umum yang sering ditanyakan pengguna</p>
+      </div>
+
+      <div class="general-question">
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Apakah harga di atas termasuk tiket masuk ke tempat wisata?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Ya harga di atas sudah termasuk tiket masuk ke tempat wisata,
+              driver, BBM, TOL, akomodasi supir dll
+            </p>
+          </div>
+        </div>
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Apakah jika saya memesan paket travel innova dan saya tidak mengisi
+            dengan jumlah penumpang maksimal, apakah saya tetap membayar harga
+            yang sama?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Ya disini kami menggunakan sistem <b>Private</b>, yang dimana 1
+              kendaraan hanya akan diisi oleh orang yang client inginkan. Kami
+              tida akan mencampur antara rombongan 1 dengan yang lainnya.
+            </p>
+          </div>
+        </div>
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Apakah saya di perbolehkan meminta berhenti sejenak ke rest aren
+            untuk sholat/buang air kecil?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Tentu sangat boleh, jika ingin berhenti sejenak untuk sholat atau
+              buang air kecil, kami akan berhenti di rest area terdekat. Tinggal
+              bilang saja kepada driver.
+            </p>
+          </div>
+        </div>
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Apakah saya di perbolehkan meminta kepada driver untuk menuju ke
+            destinasi yang tidak tercantum di paket travel?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Kami memperbolehkan anda untuk meminta kepada driver untuk menuju
+              ke destinasi yang tidak tercantum di paket travel, namun dengan
+              catatan anda harus membayar tambahan biaya. dan tidak akan
+              melewati batas maksimal waktu yang sudah ditentukan. Jangan lupa
+              selalu kordinasikan kepada driver dan kami untuk menghindari
+              hal-hal yang tidak diinginkan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img src="../../Assets/logo-footer.svg" alt="" />
+      <div class="line-footer"></div>
+      <p>© @copyright songo wali 2024</p>
+    </footer>
+
+    <script src="../logic/ziarah.js"></script>
   </body>
 </html>

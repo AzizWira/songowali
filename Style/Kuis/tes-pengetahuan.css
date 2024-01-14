@@ -2,33 +2,33 @@
 
 @font-face {
   font-family: "vollda";
-  src: url("../Assets/font/Vollda-Bold.otf") format("otf"); /* Sesuaikan dengan lokasi dan format file font */
+  src: url("../Assets/font/Vollda-Bold.otf") format("otf");
+  /* Sesuaikan dengan lokasi dan format file font */
   /* Mungkin perlu menambahkan properti lain seperti font-weight, font-style, dsb. */
 }
 
 .head-content {
+  background-color: #E0E9E1;
   display: flex;
   margin: 42px 0 0 0;
+  gap: 30px;
   align-items: center;
   justify-content: space-between;
   border-radius: 30px;
-  border: 1px solid #c4c4c4;
+  padding: 30px;
 }
 
 .h-content-left {
-  max-width: 330px;
-  margin: 30px 23px;
+  width: 30%;
 }
 
 .h-content-left img {
   width: 100%;
   height: auto;
-  padding: 30px;
 }
 
 .h-content-right {
-  width: 100%;
-  margin-left: 40px;
+  width: 70%;
 }
 
 .h-content-right h1 {
@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  max-width: 58%;
+  max-width: 80%;
 }
 
 .h-content-right p {
@@ -46,7 +46,7 @@
   font-family: "Poppins", sans-serif;
   color: #797979;
   font-size: 20px;
-  max-width: 60%;
+  max-width: 80%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -56,46 +56,28 @@
 
   .h-content-right h1 {
     font-size: 26px;
+    max-width: 100%;
   }
 
   .h-content-right p {
     font-size: 22px;
+    max-width: 100%;
   }
 }
-
-@media only screen and (max-width: 8000px) {
-    .head-content {
-      flex-direction: column;
-      gap: 20px;
-      padding: 10px 20px 30px 20px;
-    }
-
-    .h-content-left {
-        width: 70%;
-        margin: 0px 23px 20px 0px;
-      }
-    
-      .h-content-right h1 {
-        text-align: center;
-        max-width: 100%;
-      }
-    
-      .h-content-right p {
-        text-align: center;
-        max-width: 100%;
-      }
-  }
 
 @media only screen and (max-width: 760px) {
   .head-content {
     flex-direction: column;
     gap: 20px;
-    padding: 10px 20px 30px 20px;
+    padding: 20px 0;
   }
 
   .h-content-left {
     width: 70%;
-    margin: 0px 23px 20px 0px;
+  }
+
+  .h-content-right {
+    width: 90%;
   }
 
   .h-content-right h1 {
@@ -112,7 +94,6 @@
 @media only screen and (max-width: 500px) {
   .h-content-left {
     width: 60%;
-    margin: 0px 23px 0px 0px;
   }
 
   .h-content-right h1 {
@@ -120,9 +101,22 @@
   }
 
   .h-content-right p {
+    margin-top: 5px;
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .h-content-right h1 {
+    font-size: 22px;
+  }
+
+  .h-content-right p {
+    font-size: 18px;
+  }
+}
+
+/*  */
 
 .content-knowledge {
   display: grid;
@@ -138,6 +132,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -175,18 +170,19 @@
 
 @media only screen and (max-width: 900px) {
   .content-knowledge {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
-}
 
-@media only screen and (max-width: 900px) {
   .name-wali {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  .content-knowledge {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .name-wali {
     font-size: 22px;
   }
@@ -197,7 +193,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .content-knowledge{
+    gap: 10px;
+  }
+  
   .card-profile {
     padding: 15px;
+  }
+
+  .name-wali {
+    font-size: 20px;
   }
 }

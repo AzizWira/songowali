@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: "vollda";
-  src: url("Assets/font/Vollda-Bold.otf") format("otf"); /* Sesuaikan dengan lokasi dan format file font */
-  /* Mungkin perlu menambahkan properti lain seperti font-weight, font-style, dsb. */
+  src: url("Assets/font/Vollda-Bold.otf") format("opentype"); 
 }
 
 * {

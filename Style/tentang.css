@@ -1,33 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-  font-family: "vollda";
-  src: url("../Assets/font/Vollda-Bold.otf") format("otf"); /* Sesuaikan dengan lokasi dan format file font */
-  /* Mungkin perlu menambahkan properti lain seperti font-weight, font-style, dsb. */
+    font-family: "vollda";
+    src: url("../Assets/font/Vollda-Bold.otf") format("opentype");
 }
 
-.img{
+/* .header-about {
+    background: url(../Assets/bgHeaderAbout.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-about .img{
+    max-width: 20%;
+}
+
+.header-about .img img {
     width: 100%;
     height: auto;
-}
+} */
 
-.about{
-    background-color: #E0E9E1;
-    padding: 60px 100px;
+/*  */
+
+.about {
+    /* background parallax effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../Assets/bgAbout.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 0;
     text-align: center;
     margin-top: 0;
 }
 
-.title-about{
+.title-about {
     font-family: 'vollda', sans-serif;
     font-size: 32px;
-    color: #2E6F34;
+    color: #fff;
 }
 
-.desc-about{
+.desc-about {
     font-family: 'Poppins', sans-serif;
-    color: #4b4b4b;
+    color: #ffffff;
     margin-top: 46px;
+    max-width: 80%;
 }
 
 /* faq */
@@ -101,7 +127,7 @@
         margin-top: 40px;
     }
 
-    .sub-subjek h2, .selectArmada h2 {
+    .sub-subjek h2 {
         font-size: 26px;
     }
 
@@ -119,11 +145,11 @@
         margin-top: 30px;
     }
 
-    .sub-subjek h2, .selectArmada h2 {
+    .sub-subjek h2 {
         font-size: 24px;
     }
 
-    .sub-subjek p, .selectArmada p, .option-travel h2 {
+    .sub-subjek p {
         font-size: 18px;
     }
 
@@ -137,11 +163,11 @@
 }
 
 @media only screen and (max-width: 750px) {
-    .sub-subjek h2, .selectArmada h2 {
+    .sub-subjek h2 {
         font-size: 22px;
     }
 
-    .sub-subjek p, .selectArmada p, .option-travel h2 {
+    .sub-subjek p {
         font-size: 16px;
     }
 
@@ -168,7 +194,7 @@
         margin-top: 20px;
     }
 
-    .sub-subjek h2, .selectArmada h2 {
+    .sub-subjek h2 {
         font-size: 20px;
     }
 }

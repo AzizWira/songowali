@@ -1,147 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang kami | Songo Wali</title>
+    <link
+      rel="icon"
+      href="../../Assets/logo-songo-wali.svg"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="../Style/tentang.css" />
+    <link rel="stylesheet" href="../app.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tentang kami | Songo Wali</title>
-  <link rel="icon" href="../../Assets/logo-songo-wali.svg" type="image/icon type" />
-  <link rel="stylesheet" href="../Style/tentang.css" />
-  <link rel="stylesheet" href="../app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</head>
-
-<body>
-  <nav>
-    <div class="wrapper-nav">
-      <div class="logo">
-        <img src="../../Assets/logo-nav.jpg" alt="" class="logo-img" />
+  <body>
+    <nav>
+      <div class="wrapper-nav">
+        <div class="logo">
+          <img src="../../Assets/logo-nav.jpg" alt="" class="logo-img" />
+        </div>
+        <input type="radio" name="slider" id="menu-btn-nav" />
+        <input type="radio" name="slider" id="close-btn-nav" />
+        <ul class="nav-links">
+          <label for="close-btn-nav" class="btn close-btn-nav"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="pengetahuan.html">Pengetahuan</a></li>
+          <li><a href="Kuis/tes-pengetahuan.html">Tes Pengetahuan</a></li>
+          <li><a href="tentang.html" class="active">Tentang</a></li>
+          <li><a href="ziarah.html">Ziarah</a></li>
+        </ul>
+        <div class="nav-right">
+          <label for="menu-btn-nav" class="btn menu-btn-nav"
+            ><iconify-icon
+              icon="pajamas:hamburger"
+              style="color: #2d6e34"
+              width="30"
+            ></iconify-icon
+          ></label>
+        </div>
       </div>
-      <input type="radio" name="slider" id="menu-btn-nav" />
-      <input type="radio" name="slider" id="close-btn-nav" />
-      <ul class="nav-links">
-        <label for="close-btn-nav" class="btn close-btn-nav"><i class="fas fa-times"></i></label>
-        <li><a href="../index.html">Beranda</a></li>
-        <li><a href="pengetahuan.html">Pengetahuan</a></li>
-        <li><a href="Kuis/tes-pengetahuan.html">Tes Pengetahuan</a></li>
-        <li><a href="tentang.html" class="active">Tentang</a></li>
-        <li><a href="ziarah.html">Ziarah</a></li>
-      </ul>
-      <div class="nav-right">
-        <label for="menu-btn-nav" class="btn menu-btn-nav"><iconify-icon icon="pajamas:hamburger" style="color: #2d6e34"
-            width="30"></iconify-icon></label>
+    </nav>
+    <!-- <div class="header-about">
+      <div class="img">
+        <img src="../Assets/imgHeaderAbout.png" alt="" />
+      </div>
+    </div> -->
+    <div class="about">
+      <p class="title-about">Tentang Songo Wali</p>
+      <p class="desc-about">
+        Songo wali adalah sebuah platform yang mengundang Anda untuk menelusuri
+        dan memahami lebih dalam tentang warisan spiritual dan nilai-nilai
+        keagamaan yang ditinggalkan oleh Wali Songo. Kami tidak hanya
+        menyediakan layanan argo pariwisata religi yang memukau, tetapi juga
+        menawarkan peluang edukasi yang memperkaya pengetahuan Anda tentang
+        perjalanan keagamaan di Indonesia. Melalui informasi yang kami sajikan,
+        Anda dapat menjelajahi destinasi wisata yang sarat sejarah, menemukan
+        kecantikan tempat-tempat bersejarah yang menjadi saksi perjuangan Wali
+        Songo, dan meresapi nilai-nilai luhur yang mereka anut. Kami percaya
+        bahwa melalui kombinasi perjalanan spiritual dan edukas.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="sub-subjek">
+        <h2 class="title-faq-quiz">Pertanyaan Umum</h2>
+        <p>Berikut pertanyaan umum yang sering ditanyakan pengguna</p>
+      </div>
+
+      <div class="general-question">
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Ada apa saja pada website Songo Wali?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Pada website Songo Wali terdapat 3 menu utama, yaitu menu
+              pengetahuan, menu tes pengetahuan, dan menu ziarah. Pada menu
+              pengetahuan terdapat informasi-informasi tentang Wali Songo dan
+              tempat-tempat yang terkait dengan Wali Songo. Pada menu tes
+              pengetahuan terdapat kuis yang dapat menguji pengetahuan anda
+              tentang Wali Songo. Pada menu ziarah terdapat paket-paket travel
+              yang dapat anda pilih untuk melakukan perjalanan ziarah ke tempat
+              yang terkait dengan Wali Songo.
+            </p>
+          </div>
+        </div>
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Apakah jika saya mengerjakan Tes Pengetahuan dan saya benar semua akan mendapatkan voucher diskon untuk paket travel?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Sayang sekali untuk saat ini tidak, karena memang tujuan awal kami membuat Tes Pengetahuan ini adalah untuk menguji pengetahuan anda tentang Wali Songo setelah membaca artikel/materi yang sudah kami berikan. 
+            </p>
+          </div>
+        </div>
+        <div class="card-faq" onclick="toggleFAQ(this)">
+          <div class="question">
+            Apakah ada cara efektif untuk saya yang malas membaca materi yang sangat panjang?
+            <span class="icon-faq">
+              <iconify-icon
+                icon="line-md:chevron-small-down"
+                style="color: #797979"
+                width="30"
+              ></iconify-icon>
+            </span>
+          </div>
+          <div class="text-faq">
+            <p>
+              Tentu, disini kami memberikan fitur tambahan yaitu fitur audio yang dapat membantu anda untuk mendengarkan materi yang sudah kami berikan. Dan juga materi disini benar benar valid berasal dari sumber yang terpercaya seperti Wikipedia dan lainnya.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <div class="img">
-    <img src="../Assets/header-tentang.jpg" alt="" class="header-about">
-  </div>
-
-  <div class="about">
-    <p class="title-about">Tentang Songo Wali</p>
-    <p class="desc-about">Songo wali adalah sebuah platform yang mengundang Anda untuk menelusuri dan memahami lebih
-      dalam tentang warisan spiritual dan nilai-nilai keagamaan yang ditinggalkan oleh Wali Songo. Kami tidak hanya
-      menyediakan layanan argo pariwisata religi yang memukau, tetapi juga menawarkan peluang edukasi yang memperkaya
-      pengetahuan Anda tentang perjalanan keagamaan di Indonesia. Melalui informasi yang kami sajikan, Anda dapat
-      menjelajahi destinasi wisata yang sarat sejarah, menemukan kecantikan tempat-tempat bersejarah yang menjadi saksi
-      perjuangan Wali Songo, dan meresapi nilai-nilai luhur yang mereka anut. Kami percaya bahwa melalui kombinasi
-      perjalanan spiritual dan edukas.</p>
-  </div>
-  <div class="container">
-    <div class="sub-subjek">
-      <h2 class="title-faq-quiz">Pertanyaan Umum</h2>
-      <p>Berikut pertanyaan umum yang sering ditanyakan pengguna</p>
-    </div>
-  
-    <div class="general-question">
-      <div class="card-faq" onclick="toggleFAQ(this)">
-        <div class="question">
-          Apakah harga di atas termasuk tiket masuk ke tempat wisata?
-          <span class="icon-faq">
-            <iconify-icon
-              icon="line-md:chevron-small-down"
-              style="color: #797979"
-              width="30"
-            ></iconify-icon>
-          </span>
-        </div>
-        <div class="text-faq">
-          <p>
-            Ya harga di atas sudah termasuk tiket masuk ke tempat wisata,
-            driver, BBM, TOL, akomodasi supir dll
-          </p>
-        </div>
-      </div>
-      <div class="card-faq" onclick="toggleFAQ(this)">
-        <div class="question">
-          Apakah jika saya memesan paket travel innova dan saya tidak mengisi
-          dengan jumlah penumpang maksimal, apakah saya tetap membayar harga
-          yang sama?
-          <span class="icon-faq">
-            <iconify-icon
-              icon="line-md:chevron-small-down"
-              style="color: #797979"
-              width="30"
-            ></iconify-icon>
-          </span>
-        </div>
-        <div class="container"></div>
-        <div class="text-faq">
-          <p>
-            Ya disini kami menggunakan sistem <b>Private</b>, yang dimana 1
-            kendaraan hanya akan diisi oleh orang yang client inginkan. Kami
-            tida akan mencampur antara rombongan 1 dengan yang lainnya.
-          </p>
-        </div>
-      </div>
-      <div class="card-faq" onclick="toggleFAQ(this)">
-        <div class="question">
-          Apakah saya di perbolehkan meminta berhenti sejenak ke rest aren
-          untuk sholat/buang air kecil?
-          <span class="icon-faq">
-            <iconify-icon
-              icon="line-md:chevron-small-down"
-              style="color: #797979"
-              width="30"
-            ></iconify-icon>
-          </span>
-        </div>
-        <div class="text-faq">
-          <p>
-            Tentu sangat boleh, jika ingin berhenti sejenak untuk sholat atau
-            buang air kecil, kami akan berhenti di rest area terdekat. Tinggal
-            bilang saja kepada driver.
-          </p>
-        </div>
-      </div>
-      <div class="card-faq" onclick="toggleFAQ(this)">
-        <div class="question">
-          Apakah saya di perbolehkan meminta kepada driver untuk menuju ke
-          destinasi yang tidak tercantum di paket travel?
-          <span class="icon-faq">
-            <iconify-icon
-              icon="line-md:chevron-small-down"
-              style="color: #797979"
-              width="30"
-            ></iconify-icon>
-          </span>
-        </div>
-        <div class="text-faq">
-          <p>
-            Kami memperbolehkan anda untuk meminta kepada driver untuk menuju
-            ke destinasi yang tidak tercantum di paket travel, namun dengan
-            catatan anda harus membayar tambahan biaya. dan tidak akan
-            melewati batas maksimal waktu yang sudah ditentukan. Jangan lupa
-            selalu kordinasikan kepada driver dan kami untuk menghindari
-            hal-hal yang tidak diinginkan.
-          </p>
-        </div>
-      </div>
-  </div>
-  </div>
-  <script src="../logic/ziarah.js"></script>
-</body>
-
+    <footer>
+      <img src="../../Assets/logo-footer.svg" alt="" />
+      <div class="line-footer"></div>
+      <p>© @copyright songo wali 2024</p>
+    </footer>
+    <script src="../logic/ziarah.js"></script>
+  </body>
 </html>

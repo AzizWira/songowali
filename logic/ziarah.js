@@ -174,7 +174,7 @@ function updateTravelCards(category) {
           </p>
         </div>
         <div class="bottom">
-          <p>${data.price}</p>
+          <p>Rp${data.price};</p>
           <button onclick="window.location.href='${data.direct}'">Cek Detail</button>
         </div>
       </div>

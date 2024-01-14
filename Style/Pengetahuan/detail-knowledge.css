@@ -300,7 +300,7 @@
 }
 
 .play, .pause{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: max-content;
@@ -314,10 +314,6 @@
 
 .play:hover, .pause:hover{
   background-color: #327b39;
-}
-
-.play, .pause{
-  display: none;
 }
 
 .btn-music {

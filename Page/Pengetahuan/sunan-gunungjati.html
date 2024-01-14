@@ -278,35 +278,64 @@
       var biografi = document.getElementById("Audio-BiografiSunanKudus");
       var dakwah = document.getElementById("Audio-DakwahSunanKudus");
       var kultural = document.getElementById("Audio-KulturalSunanKudus");
-
-      var currentAudio = null; // Menyimpan audio yang sedang diputar
+      var currentAudio = null;
 
       document
         .getElementById("btnPlayAudioBiografi")
-        .addEventListener("click", playAudio);
+        .addEventListener("click", function () {
+          playAudio(biografi, "btnPauseBiografi", "btnContinueBiografi");
+        });
       document
         .getElementById("btnPlayAudioDakwah")
-        .addEventListener("click", audioPlay);
+        .addEventListener("click", function () {
+          playAudio(dakwah, "btnPauseDakwah", "btnContinueDakwah");
+        });
       document
         .getElementById("btnPlayAudioKultural")
-        .addEventListener("click", playSound);
+        .addEventListener("click", function () {
+          playAudio(kultural, "btnPauseKultural", "btnContinueKultural");
+        });
 
-      function playAudio() {
-        stopCurrentAudio(); // Menghentikan audio yang sedang diputar (jika ada)
-        currentAudio = biografi;
-        biografi.play();
+      document
+        .getElementById("btnContinueBiografi")
+        .addEventListener("click", continueAudio);
+      document
+        .getElementById("btnContinueDakwah")
+        .addEventListener("click", continueAudio);
+      document
+        .getElementById("btnContinueKultural")
+        .addEventListener("click", continueAudio);
+
+      document
+        .getElementById("btnPauseBiografi")
+        .addEventListener("click", pauseAudio);
+      document
+        .getElementById("btnPauseDakwah")
+        .addEventListener("click", pauseAudio);
+      document
+        .getElementById("btnPauseKultural")
+        .addEventListener("click", pauseAudio);
+
+      function playAudio(audioElement, showButtonId, hideButtonId) {
+        stopCurrentAudio();
+        currentAudio = audioElement;
+        currentAudio.play();
+        displayButtons(showButtonId, hideButtonId);
+        hideButtonsForOtherCategories(showButtonId);
       }
 
-      function audioPlay() {
-        stopCurrentAudio();
-        currentAudio = dakwah;
-        dakwah.play();
+      function continueAudio() {
+        if (currentAudio !== null && currentAudio.paused) {
+          currentAudio.play();
+          displayButtons(getPauseButtonId(), getContinueButtonId());
+        }
       }
 
-      function playSound() {
-        stopCurrentAudio();
-        currentAudio = kultural;
-        kultural.play();
+      function pauseAudio() {
+        if (currentAudio !== null && !currentAudio.paused) {
+          currentAudio.pause();
+          displayButtons(getContinueButtonId(), getPauseButtonId());
+        }
       }
 
       function stopCurrentAudio() {
@@ -316,6 +345,41 @@
         }
       }
 
+      function displayButtons(showButtonId, hideButtonId) {
+        document.getElementById(showButtonId).style.display = "flex";
+        document.getElementById(hideButtonId).style.display = "none";
+      }
+
+      function hideButtonsForOtherCategories(showButtonId) {
+        var allButtons = [
+          "btnContinueBiografi",
+          "btnPauseBiografi",
+          "btnContinueDakwah",
+          "btnPauseDakwah",
+          "btnContinueKultural",
+          "btnPauseKultural",
+        ];
+
+        for (var i = 0; i < allButtons.length; i++) {
+          if (allButtons[i] !== showButtonId) {
+            document.getElementById(allButtons[i]).style.display = "none";
+          }
+        }
+      }
+
+      function getContinueButtonId() {
+        if (currentAudio === biografi) return "btnContinueBiografi";
+        if (currentAudio === dakwah) return "btnContinueDakwah";
+        if (currentAudio === kultural) return "btnContinueKultural";
+        return "";
+      }
+
+      function getPauseButtonId() {
+        if (currentAudio === biografi) return "btnPauseBiografi";
+        if (currentAudio === dakwah) return "btnPauseDakwah";
+        if (currentAudio === kultural) return "btnPauseKultural";
+        return "";
+      }
       // Get the button
       let mybutton = document.getElementById("myBtnTop");
 

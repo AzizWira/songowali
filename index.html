@@ -315,18 +315,28 @@
         <p>Silahkan hubungi kami jika ada saran maupun kesulitan</p>
       </div>
 
-      <form class="contact-us">
+      <form class="contact-us" onsubmit="generateWhatsAppLink(event)">
         <div class="left">
           <p>Nama</p>
-          <input type="text" placeholder="Nama" required />
+          <input type="text" id="namaInput" placeholder="Nama" required />
           <p>Nomor Telp</p>
-          <input type="text" placeholder="Nomor Hp/Telephone" required />
+          <input
+            type="text"
+            id="nomorHpInput"
+            placeholder="Nomor Hp/Telephone"
+            required
+          />
           <p>Email</p>
-          <input type="text" placeholder="Email" required />
+          <input type="text" id="emailInput" placeholder="Email" required />
         </div>
         <div class="right">
           <p>Pesan</p>
-          <textarea name="pesan" id="" placeholder="Pesan" required></textarea>
+          <textarea
+            name="pesan"
+            id="pesanInput"
+            placeholder="Pesan"
+            required
+          ></textarea>
           <button type="submit">Kirim</button>
         </div>
       </form>
@@ -338,6 +348,19 @@
     </footer>
 
     <script>
+      function generateWhatsAppLink(event) {
+        event.preventDefault();
+        const nama = document.getElementById("namaInput").value;
+        const nomorHp = document.getElementById("nomorHpInput").value;
+        const email = document.getElementById("emailInput").value;
+        const pesan = document.getElementById("pesanInput").value;
+        const whatsappMessage = `Halo nama saya "${nama}" | Nomor hp: "${nomorHp}" | Email: "${email}" | Pesan: "${pesan}"`;
+        const whatsappLink = `https://api.whatsapp.com/send?phone=6289650484363&text=${encodeURIComponent(
+          whatsappMessage
+        )}`;
+        window.open(whatsappLink, "_blank");
+      }
+
       // function poster slider
 
       function callbackFunc() {

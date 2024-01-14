@@ -35,10 +35,11 @@
   margin-bottom: 30px;
 }
 
-.social-media a {
+.social-media  {
   color: white;
   font-size: 28px;
-  margin: 5px;
+  display: flex;
+  gap: 10px;
 }
 
 .icon-sosmed {

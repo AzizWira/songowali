@@ -56,6 +56,10 @@
       </div>
     </nav>
 
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top">
+      <iconify-icon icon="mingcute:arrow-up-line"></iconify-icon>
+    </button>
+
     <div
       class="header"
       style="
@@ -65,7 +69,7 @@
             rgba(0, 0, 0, 0.5) 100%
           ),
           url(Assets/menaraKudus.jpg);
-          background-attachment: fixed;
+        background-attachment: fixed;
       "
       id="headerBackground"
     >
@@ -417,6 +421,31 @@
       }
 
       // end of function poster slider
+
+      // Get the button
+      let mybutton = document.getElementById("myBtnTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
   </body>
 </html>

@@ -56,6 +56,10 @@
       </div>
     </nav>
 
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top">
+      <iconify-icon icon="mingcute:arrow-up-line"></iconify-icon>
+    </button>
+
     <div class="container">
       <div class="title-section">
         <h1>Pengetahuan</h1>
@@ -73,7 +77,8 @@
             </div>
             <p class="name-wali">Sunan Kudus</p>
             <p class="desc-wali">
-              Salah Satu Wali Songo Yang berdakwah di daerah kudus. Dengan nama asli Jaafar As-Sadiq
+              Salah Satu Wali Songo Yang berdakwah di daerah kudus. Dengan nama
+              asli Jaafar As-Sadiq
             </p>
           </div>
           <div class="two">
@@ -93,7 +98,8 @@
             </div>
             <p class="name-wali">Sunan Muria</p>
             <p class="desc-wali">
-              Wali Songo Yang berdakwah di gunung muria kudus. Dengan nama asli Raden Umar Said
+              Wali Songo Yang berdakwah di gunung muria kudus. Dengan nama asli
+              Raden Umar Said
             </p>
           </div>
           <div class="two">
@@ -113,7 +119,8 @@
             </div>
             <p class="name-wali">Sunan Kalijaga</p>
             <p class="desc-wali">
-              Wali Songo yang berdakwah di kota demak jawa tengah. Dengan nama asli Raden Mas Said
+              Wali Songo yang berdakwah di kota demak jawa tengah. Dengan nama
+              asli Raden Mas Said
             </p>
           </div>
           <div class="two">
@@ -133,7 +140,8 @@
             </div>
             <p class="name-wali">Sunan Gresik</p>
             <p class="desc-wali">
-              Wali Songo yang berdakwah di kota gresik jawa timur. Dengan nama asli Maulana Malik Ibrahim
+              Wali Songo yang berdakwah di kota gresik jawa timur. Dengan nama
+              asli Maulana Malik Ibrahim
             </p>
           </div>
           <div class="two">
@@ -153,7 +161,8 @@
             </div>
             <p class="name-wali">Sunan Gunung Jati</p>
             <p class="desc-wali">
-              Wali Songo yang berdakwah di daerah cirebon jawa barat. Dengan nama asli Syarif Hidayatullah
+              Wali Songo yang berdakwah di daerah cirebon jawa barat. Dengan
+              nama asli Syarif Hidayatullah
             </p>
           </div>
           <div class="two">
@@ -173,7 +182,8 @@
             </div>
             <p class="name-wali">Sunan Drajat</p>
             <p class="desc-wali">
-              Wali Songo yang berdakwah di daerah lamongan jawa timur. Dengan nama asli Raden Qosim
+              Wali Songo yang berdakwah di daerah lamongan jawa timur. Dengan
+              nama asli Raden Qosim
             </p>
           </div>
           <div class="two">
@@ -193,7 +203,8 @@
             </div>
             <p class="name-wali">Sunan Giri</p>
             <p class="desc-wali">
-              Wali Songo yang berdakwah di selatan kota gresik. Dengan nama asli Muhammad Ainul Yakin
+              Wali Songo yang berdakwah di selatan kota gresik. Dengan nama asli
+              Muhammad Ainul Yakin
             </p>
           </div>
           <div class="two">
@@ -212,7 +223,10 @@
               />
             </div>
             <p class="name-wali">Sunan Bonang</p>
-            <p class="desc-wali">Wali Songo yang berdakwah di kota kediri. Dengan nama asli Raden Maulana Makdum Ibrahim</p>
+            <p class="desc-wali">
+              Wali Songo yang berdakwah di kota kediri. Dengan nama asli Raden
+              Maulana Makdum Ibrahim
+            </p>
           </div>
           <div class="two">
             <a href="Pengetahuan/sunan-bonang.html">
@@ -231,7 +245,8 @@
             </div>
             <p class="name-wali">Sunan Ampel</p>
             <p class="desc-wali">
-              Wali Songo yang berdakwah di surabaya jawa timur. Dengan nama asli Raden Rachmat
+              Wali Songo yang berdakwah di surabaya jawa timur. Dengan nama asli
+              Raden Rachmat
             </p>
           </div>
           <div class="two">
@@ -248,5 +263,31 @@
       <div class="line-footer"></div>
       <p>© @copyright songo wali 2024</p>
     </footer>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtnTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>

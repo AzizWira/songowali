@@ -48,6 +48,10 @@
         </div>
       </div>
     </nav>
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top">
+      <iconify-icon icon="mingcute:arrow-up-line"></iconify-icon>
+    </button>
+
     <div class="about">
       <p class="title-about">Tentang Songo Wali</p>
       <p class="desc-about">
@@ -64,19 +68,27 @@
       </p>
       <div class="social-media">
         <a href="">
-          <iconify-icon icon="ri:instagram-fill" class="icon-sosmed"></iconify-icon>
+          <iconify-icon
+            icon="ri:instagram-fill"
+            class="icon-sosmed"
+          ></iconify-icon>
         </a>
         <a href="">
-          <iconify-icon icon="mingcute:whatsapp-fill" class="icon-sosmed"></iconify-icon>
+          <iconify-icon
+            icon="mingcute:whatsapp-fill"
+            class="icon-sosmed"
+          ></iconify-icon>
         </a>
         <a href="">
-          <iconify-icon icon="dashicons:email-alt" class="icon-sosmed"></iconify-icon>
+          <iconify-icon
+            icon="dashicons:email-alt"
+            class="icon-sosmed"
+          ></iconify-icon>
         </a>
       </div>
     </div>
 
     <div class="container">
-
       <div class="sub-subjek">
         <h2 class="title-faq-quiz">Pertanyaan Umum</h2>
         <p>Berikut pertanyaan umum yang sering ditanyakan pengguna</p>
@@ -229,9 +241,7 @@
               class="image"
             />
             <div class="overlay">
-              <div class="text-hover">
-                Makam Sunan Bonang
-              </div>
+              <div class="text-hover">Makam Sunan Bonang</div>
             </div>
           </div>
         </div>
@@ -268,7 +278,6 @@
           </div>
         </div>
       </div>
-
     </div>
     <footer>
       <img src="../../Assets/logo-footer.svg" alt="" />
@@ -276,5 +285,31 @@
       <p>© @copyright songo wali 2024</p>
     </footer>
     <script src="../logic/ziarah.js"></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtnTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>

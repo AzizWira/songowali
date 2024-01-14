@@ -48,9 +48,21 @@
       </div>
     </nav>
 
+    <button onclick="topFunction()" id="myBtnTop" title="Go to top">
+      <iconify-icon icon="mingcute:arrow-up-line"></iconify-icon>
+    </button>
+
     <div class="container">
       <div class="banner-ziarah">
-        <div class="left" style="background: url(../../Assets/detailPaket/innova.jpg); background-repeat: no-repeat; background-position: right; background-size: cover;">
+        <div
+          class="left"
+          style="
+            background: url(../../Assets/detailPaket/innova.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: cover;
+          "
+        >
           <img src="../../Assets/detailPaket/elipse.png" alt="" />
           <h1>Paket Gold Wisata Religi 6 Wali</h1>
         </div>
@@ -164,7 +176,9 @@
 
         <div class="con notes">
           <h3>
-            <span><iconify-icon icon="majesticons:note-text-line"></iconify-icon></span>
+            <span
+              ><iconify-icon icon="majesticons:note-text-line"></iconify-icon
+            ></span>
             Catatan :
           </h3>
           <p>
@@ -179,8 +193,8 @@
           </p>
           <div class="danger">
             <p>
-              !! Jika penjemputan ke titik kumpul lebih dari <b>100km</b> dari titik
-              agen terdekat maka akan di kenakan biaya Rp500.000; (Berlaku
+              !! Jika penjemputan ke titik kumpul lebih dari <b>100km</b> dari
+              titik agen terdekat maka akan di kenakan biaya Rp500.000; (Berlaku
               kelipatan)
             </p>
           </div>
@@ -192,5 +206,32 @@
       <div class="line-footer"></div>
       <p>© @copyright songo wali 2024</p>
     </footer>
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtnTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>

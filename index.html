@@ -65,7 +65,7 @@
       style="
         background-image: linear-gradient(
             0deg,
-            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.693) 0%,
             rgba(0, 0, 0, 0.5) 100%
           ),
           url(Assets/menaraKudus.jpg);
@@ -106,6 +106,21 @@
           <div class="card-information">
             <div class="img-information">
               <img src="Assets/galery/MakamSunanMuria.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card-information">
+            <div class="img-information">
+              <img src="Assets/galery/makamSunanGiri.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card-information">
+            <div class="img-information">
+              <img src="Assets/galery/makamSunanBonang.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card-information">
+            <div class="img-information">
+              <img src="Assets/galery/makamSunanGresik.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -409,12 +424,15 @@
         $slider.on("afterChange", function (event, slick, currentSlide) {
           // Change the background image based on the current slide
           var imageUrls = [
-            "Assets/galery/MakamSunanAmpel.jpg",
-            "Assets/galery/MakamSunanDrajat.jpg",
-            "Assets/galery/MakamSunanGunungJati.jpg",
-            "Assets/galery/MakamSunanKalijaga.jpg",
-            "Assets/galery/MakamSunanMuria.jpg",
-            "Assets/galery/menaraKudus.jpg",
+            "Assets/galery/bg-makamsunanampel.jpg",
+            "Assets/galery/bg-makamsunandrajat.jpg",
+            "Assets/galery/bg-makamsunangunungjati.jpg",
+            "Assets/galery/bg-makamsunankalijaga.jpg",
+            "Assets/galery/bg-makamsunanmuria.jpg",
+            "Assets/galery/bg-makamSunanGiri.jpg",
+            "Assets/galery/bg-makamSunanBonang.jpg",
+            "Assets/galery/bg-makamSunanGresik.jpg",
+            "Assets/galery/bg-menarakudus.jpg",
           ];
 
           var imageUrl = imageUrls[currentSlide % imageUrls.length];

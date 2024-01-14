@@ -1,47 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-    font-family: "vollda";
-    src: url("../Assets/font/Vollda-Bold.otf") format("opentype");
+  font-family: "vollda";
+  src: url("../Assets/font/Vollda-Bold.otf") format("opentype");
 }
 
 .about {
-    /* background parallax effect */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.849) 0%, rgba(0, 0, 0, 0.65) 100%), url("../Assets/bgAbout.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 60px 0;
-    text-align: center;
-    margin-top: 0;
+  /* background parallax effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.849) 0%, rgba(0, 0, 0, 0.65) 100%), url("../Assets/bgAbout.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 60px 0;
+  text-align: center;
+  margin-top: 0;
 }
 
 .title-about {
-    font-family: 'vollda', sans-serif;
-    font-size: 32px;
-    color: #fff;
+  font-family: 'vollda', sans-serif;
+  font-size: 32px;
+  color: #fff;
 }
 
 .desc-about {
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    margin-top: 46px;
-    max-width: 80%;
-    margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin-top: 46px;
+  max-width: 80%;
+  margin-bottom: 30px;
 }
 
-.social-media a{
+.social-media a {
   color: white;
   font-size: 28px;
   margin: 5px;
 }
 
-.icon-sosmed{
+.icon-sosmed {
   background-color: rgba(255, 255, 255, 0.283);
   padding: 5px;
   border-radius: 10px;
@@ -49,277 +49,278 @@
   transition: 0.3s;
 }
 
-.icon-sosmed:hover{
+.icon-sosmed:hover {
   transform: translate(0, -10px);
 }
+
 /* galery */
 
 .image-galery {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.galery1 .img img,
+.galery2 .img img,
+.galery3 .img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.galery1 {
+  display: flex;
+  gap: 10px;
+  margin-top: 38px;
+  width: 100%;
+}
+
+.galery2 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.galery3 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.con-image {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000b4;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.con-image:hover .overlay {
+  opacity: 1;
+}
+
+.text-hover {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  border: 2px solid white;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-style: dashed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text-hover {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .text-hover {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image-galery {
+    gap: 5px;
+  }
+
+  .galery1, .galery2, .galery3 {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .galery1, .galery2, .galery3 {
     flex-direction: column;
-    width: 100%;
-    gap: 10px;
   }
-  
-  .galery1 .img img,
-  .galery2 .img img,
-  .galery3 .img img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .galery1 {
-    display: flex;
-    gap: 10px;
-    margin-top: 38px;
-    width: 100%;
-  }
-  
-  .galery2 {
-    display: flex;
-    gap: 10px;
+
+  .con-image {
     width: 100%;
   }
 
-  .galery3 {
-    display: flex;
+  .con-image img {
+    aspect-ratio: 16/9;
+  }
+
+  .image-galery {
     gap: 10px;
-    width: 100%;
   }
-  
-  .con-image {
-    position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #000000b4;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .con-image:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text-hover {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    border: 2px solid white;
-    padding: 5px 20px;
-    border-radius: 10px;
-    border-style: dashed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  @media only screen and (max-width: 1000px) {
-    .text-hover {
-      font-size: 16px;
-    }
-  }
-  
-  @media only screen and (max-width: 900px) {
-    .text-hover {
-      font-size: 16px;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .image-galery {
-      gap: 5px;
-    }
-  
-    .galery1, .galery2, .galery3 {
-      gap: 10px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .galery1, .galery2, .galery3 {
-      flex-direction: column;
-    }
-  
-    .con-image {
-      width: 100%;
-    }
-  
-    .con-image img {
-      aspect-ratio: 16/9;
-    }
-  
-    .image-galery {
-      gap: 10px;
-    }
-  }
-  
-  /* end galery */
+}
+
+/* end galery */
 
 /* faq */
 
 .general-question {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .sub-subjek {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .sub-subjek h2 {
-    font-family: "vollda", sans-serif;
-    font-size: 28px;
-    color: #2e6f34;
-    text-align: center;
+  font-family: "vollda", sans-serif;
+  font-size: 28px;
+  color: #2e6f34;
+  text-align: center;
 }
 
 .sub-subjek p {
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    color: #797979;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #797979;
+  text-align: center;
 }
 
 .card-faq {
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #c4c4c4;
-    background: #fff;
-    cursor: pointer;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  cursor: pointer;
 }
 
 .card-faq:hover {
-    border-radius: 20px;
-    border: 1px solid #c4c4c4;
-    background: #fff;
-    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .card-faq .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-faq .text-faq {
-    margin-top: 10px;
-    display: none;
+  margin-top: 10px;
+  display: none;
 }
 
 .text-faq {
-    font-size: 18px;
-    color: #797979;
-    font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #797979;
+  font-family: 'Poppins', sans-serif;
 }
 
 .question {
-    font-size: 20px;
-    color: #4b4b4b;
-    font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #4b4b4b;
+  font-family: 'Poppins', sans-serif;
 }
 
 .rotate180 {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 1100px) {
-    .sub-subjek {
-        margin-top: 40px;
-    }
+  .sub-subjek {
+    margin-top: 40px;
+  }
 
-    .sub-subjek h2 {
-        font-size: 26px;
-    }
+  .sub-subjek h2 {
+    font-size: 26px;
+  }
 
-    .card-faq .question {
-        font-size: 20px;
-    }
+  .card-faq .question {
+    font-size: 20px;
+  }
 
-    .text-faq {
-        font-size: 20px;
-    }
+  .text-faq {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .sub-subjek {
-        margin-top: 30px;
-    }
+  .sub-subjek {
+    margin-top: 30px;
+  }
 
-    .sub-subjek h2 {
-        font-size: 24px;
-    }
+  .sub-subjek h2 {
+    font-size: 24px;
+  }
 
-    .sub-subjek p {
-        font-size: 18px;
-    }
+  .sub-subjek p {
+    font-size: 18px;
+  }
 
-    .card-faq .question {
-        font-size: 18px;
-    }
+  .card-faq .question {
+    font-size: 18px;
+  }
 
-    .text-faq {
-        font-size: 18px;
-    }
+  .text-faq {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-    .sub-subjek h2 {
-        font-size: 22px;
-    }
+  .sub-subjek h2 {
+    font-size: 22px;
+  }
 
-    .sub-subjek p {
-        font-size: 16px;
-    }
+  .sub-subjek p {
+    font-size: 16px;
+  }
 
-    .card-faq .question {
-        font-size: 16px;
-    }
+  .card-faq .question {
+    font-size: 16px;
+  }
 
-    .text-faq {
-        font-size: 16px;
-    }
+  .text-faq {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .card-faq {
-        padding: 10px;
-    }
+  .card-faq {
+    padding: 10px;
+  }
 
-    .general-question {
-        gap: 10px;
-        margin-top: 20px;
-    }
+  .general-question {
+    gap: 10px;
+    margin-top: 20px;
+  }
 
-    .sub-subjek {
-        margin-top: 20px;
-    }
+  .sub-subjek {
+    margin-top: 20px;
+  }
 
-    .sub-subjek h2 {
-        font-size: 20px;
-    }
+  .sub-subjek h2 {
+    font-size: 20px;
+  }
 }
 
 /* end faq */

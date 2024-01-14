@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "vollda";
-  src: url("Assets/font/Vollda-Bold.otf") format("opentype"); 
+  src: url("Assets/font/Vollda-Bold.otf") format("opentype");
 }
 
 * {
@@ -42,24 +42,37 @@ input:focus {
   }
 }
 
+.container-home {
+  max-width: 1440px;
+  padding: 0 100px 100px 100px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-home {
+    padding: 0 50px 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container-home {
+    padding: 0 30px 50px 30px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .container-home {
+    padding: 0 20px 40px 20px;
+  }
+}
+
 .container {
   max-width: 1440px;
   padding: 20px 100px 100px 100px;
   margin: 0 auto;
   /* min-height: 65vh */
   min-height: calc(100vh - 200px);
-}
-
-@media only screen and (max-width: 900px) {
-  .container {
-    padding: 20px 50px 50px 50px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .container {
-    padding: 20px 30px 50px 30px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -201,15 +214,15 @@ nav .logo-img {
     transition: all 0.3s ease;
   }
 
-  #menu-btn-nav:checked ~ .nav-links {
+  #menu-btn-nav:checked~.nav-links {
     right: 0%;
   }
 
-  #menu-btn-nav:checked ~ .btn.menu-btn-nav {
+  #menu-btn-nav:checked~.btn.menu-btn-nav {
     display: none;
   }
 
-  #close-btn-nav:checked ~ .btn.menu-btn-nav {
+  #close-btn-nav:checked~.btn.menu-btn-nav {
     display: block;
   }
 
@@ -227,6 +240,7 @@ nav .logo-img {
 nav input {
   display: none;
 }
+
 /* end navbar */
 
 .title-section h1 {

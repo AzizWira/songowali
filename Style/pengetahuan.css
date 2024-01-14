@@ -44,9 +44,26 @@
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
 }
 
+.card-profile .one{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card-profile .img{
+  overflow: hidden;
+  border-radius: 30px
+}
+
 .card-profile .img img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.card-profile:hover .img img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .name-wali {
@@ -121,6 +138,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .card-profile .img {
+    border-radius: 15px;
+  }
+
   .container .title-section h1 {
     font-size: 24px;
   }

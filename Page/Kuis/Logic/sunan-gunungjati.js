@@ -275,10 +275,10 @@ let questions = [
       if (score >= 6) {
         resultImageElement.src = "../../Assets/pengetahuan/success.svg";
         resultTextElement.textContent =
-          "HEBATT!! kamu sudah cukup memahami tentang Pengetahuan Sunan Muria";
+          "HEBATT!! kamu sudah cukup memahami tentang Pengetahuan Sunan Gunung Jati";
         btnUlangi.textContent = "Ulangi";
         btnUlangi.onclick = function () {
-          window.location.href = "sunan-muria.html";
+          window.location.href = "sunan-gunung-jati.html";
         };
         btnLanjut.textContent = "Kembali ke halaman utama";
         btnLanjut.onclick = function () {
@@ -287,10 +287,10 @@ let questions = [
       } else {
         resultImageElement.src = "../../Assets/pengetahuan/failedToNextLevel.svg";
         resultTextElement.textContent =
-          "Wah kamu belum cukup memahami tentang Pengetahuan Sunan Muria";
+          "Wah kamu belum cukup memahami tentang Pengetahuan Sunan Gunung Jati";
         btnUlangi.textContent = "Ulangi";
         btnUlangi.onclick = function () {
-          window.location.href = "sunan-muria.html";
+          window.location.href = "sunan-gunung-jati.html";
         };
         btnLanjut.textContent = "Kembali ke halaman utama";
         btnLanjut.onclick = function () {
@@ -307,7 +307,7 @@ let questions = [
       popupResult.style.display = "block";
       questionarea.style.display = "none";
       card2.style.display = "none";
-      card3.style.display = "flex";
+      card3.style.display = "flex";
     }
   
   function submitQuiz() {

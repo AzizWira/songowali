@@ -7,7 +7,7 @@
 }
 
 .body-kuis {
-    background: url(../../assets/background-kuis.jpg);
+    background: url(../../assets/bgKuis.png);
     /* background-size: cover; 
     background-position: center; */
     /* overflow: hidden; */
@@ -150,7 +150,7 @@ audio {
 }
 
 .card-2 .quiz .header-kuis p {
-    color: #A77F5B;
+    color: #2E6F34;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -197,7 +197,7 @@ audio {
 .con-btn-answer button {
     width: 100%;
     border-radius: 10px;
-    border: 1px solid #876445;
+    border: 1px solid #2E6F34;
     background: #FFF;
     padding: 10px;
     cursor: pointer;
@@ -205,11 +205,11 @@ audio {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #876445;
+    color: #2E6F34;
 }
 
 .con-btn-answer button:hover, .con-btn-answer button.active {
-    background: #876445;
+    background: #2E6F34;
     color: #FFF;
 }
 
@@ -217,7 +217,7 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #876445;
+    background: #2E6F34;
     border-radius: 5px;
     /* padding: 5px; */
     width: 40px;
@@ -230,7 +230,7 @@ audio {
 
 .con-btn-answer button:hover span:nth-child(1), .con-btn-answer button.active span:nth-child(1) {
     background-color: #FFF;
-    color: #876445;
+    color: #2E6F34;
 }
 
 .con-btn-answer button span:nth-child(2) {
@@ -250,7 +250,7 @@ audio {
 }
 
 .question .text-question .title {
-    color: #A77F5B;
+    color: #2E6F34;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -411,7 +411,7 @@ audio {
 }
 
 .card-3 .result .box .text-result .jumlah-benar {
-    color: #876445;
+    color: #2E6F34;
 }
 
 .card-3 .result .box .text-result .jumlah-salah {
@@ -424,13 +424,13 @@ audio {
 
 .con-btn-result2 button {
     border-radius: 20px;
-    border: 1px solid #876445;
+    border: 1px solid #2E6F34;
     background: #FFF;
     padding: 10px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
     text-align: center;
-    color: #876445;
+    color: #2E6F34;
     font-size: 20px;
     width: 100%;
 }
@@ -444,18 +444,18 @@ audio {
 
 .con-btn-result button {
     border-radius: 20px;
-    border: 1px solid #876445;
+    border: 1px solid #2E6F34;
     background: #FFF;
     padding: 10px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
     text-align: center;
-    color: #876445;
+    color: #2E6F34;
     font-size: 20px;
 }
 
 .con-btn-result button:hover, .con-btn-result2 button:hover {
-    background: #876445;
+    background: #2E6F34;
     color: #FFF;
 }
 

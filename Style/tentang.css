@@ -5,28 +5,6 @@
     src: url("../Assets/font/Vollda-Bold.otf") format("opentype");
 }
 
-/* .header-about {
-    background: url(../Assets/bgHeaderAbout.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.header-about .img{
-    max-width: 20%;
-}
-
-.header-about .img img {
-    width: 100%;
-    height: auto;
-} */
-
-/*  */
-
 .about {
     /* background parallax effect */
     display: flex;
@@ -56,7 +34,131 @@
     max-width: 80%;
 }
 
+/* galery */
+
+.image-galery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .galery1 .img img,
+  .galery2 .img img,
+  .galery3 .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .galery1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 38px;
+    width: 100%;
+  }
+  
+  .galery2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .galery3 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .con-image {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #000000b4;
+    border-radius: 20px;
+  }
+  
+  .con-image:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text-hover {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    border: 2px solid white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border-style: dashed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .text-hover {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .text-hover {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .image-galery {
+      gap: 5px;
+    }
+  
+    .galery1, .galery2, .galery3 {
+      gap: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .galery1, .galery2, .galery3 {
+      flex-direction: column;
+    }
+  
+    .con-image {
+      width: 100%;
+    }
+  
+    .con-image img {
+      aspect-ratio: 16/9;
+    }
+  
+    .image-galery {
+      gap: 10px;
+    }
+  }
+  
+  /* end galery */
+
 /* faq */
+
 .general-question {
     display: flex;
     flex-direction: column;

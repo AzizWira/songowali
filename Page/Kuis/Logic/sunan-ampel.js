@@ -275,10 +275,10 @@ function displayResult() {
     if (score >= 6) {
       resultImageElement.src = "../../Assets/pengetahuan/success.svg";
       resultTextElement.textContent =
-        "HEBATT!! kamu sudah cukup memahami tentang Pengetahuan Sunan Muria";
+        "HEBATT!! kamu sudah cukup memahami tentang Pengetahuan Sunan Ampel";
       btnUlangi.textContent = "Ulangi";
       btnUlangi.onclick = function () {
-        window.location.href = "sunan-muria.html";
+        window.location.href = "sunan-ampel.html";
       };
       btnLanjut.textContent = "Kembali ke halaman utama";
       btnLanjut.onclick = function () {
@@ -287,10 +287,10 @@ function displayResult() {
     } else {
       resultImageElement.src = "../../Assets/pengetahuan/failedToNextLevel.svg";
       resultTextElement.textContent =
-        "Wah kamu belum cukup memahami tentang Pengetahuan Sunan Muria";
+        "Wah kamu belum cukup memahami tentang Pengetahuan Sunan Ampel";
       btnUlangi.textContent = "Ulangi";
       btnUlangi.onclick = function () {
-        window.location.href = "sunan-muria.html";
+        window.location.href = "sunan-ampel.html";
       };
       btnLanjut.textContent = "Kembali ke halaman utama";
       btnLanjut.onclick = function () {

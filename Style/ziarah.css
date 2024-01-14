@@ -920,13 +920,15 @@
 }
 
 .text-faq {
-    font-size: 22px;
+    font-size: 18px;
     color: #797979;
+    font-family: 'Poppins', sans-serif;
 }
 
 .question {
-    font-size: 22px;
-    color: #2E6F34;
+    font-size: 20px;
+    color: #4b4b4b;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rotate180 {
